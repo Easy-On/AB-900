@@ -139,7 +139,7 @@ Audit logs record who changed which object in your tenant. In the lab [Manage us
 
     [Reviewing the named locations in Microsoft Entra](/Instructions/General/Reviewing-the-named-locations-in-Microsoft-Entra.md)
 
-    Verify that the page shows the message 0 named locations found, or a list of named locations.
+    Verify that the page lists the named locations, for example **Teams Workers** and **ME Services**, with the location type **IP ranges**.
 
 ## Exercise 10: Review your own sign-ins
 

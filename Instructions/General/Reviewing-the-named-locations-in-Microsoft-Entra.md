@@ -7,7 +7,7 @@
 1. In Conditional Access, under **Manage**, click **Named locations**.
 1. In Named locations, on the tab All Named Locations, note the number of named locations.
 
-    Verify that the list shows the named locations with the columns **Name**, **Location type**, **Trusted**, and **Conditional Access**, or the message 0 named locations found.
+    Verify that the page shows the number of named locations, for example 4 named locations found, and lists them with the columns **Name**, **Location type**, **Trusted**, **Conditional Access**, and **Creation date**.
 
     *Note:* Named locations define countries, regions, or IP address ranges that Conditional Access policies can allow or block.
 
@@ -30,7 +30,7 @@
         Select-Object -Property DisplayName, Id
     ````
 
-    Verify that the output lists the named locations. If the tenant has no named locations, the output is empty.
+    Verify that the output lists the same named locations as the page.
 
 1. Disconnect from Microsoft Graph.
 
