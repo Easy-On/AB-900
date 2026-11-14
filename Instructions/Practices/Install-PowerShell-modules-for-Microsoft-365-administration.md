@@ -39,6 +39,8 @@ Perform this task in a terminal, on **LON-CL1**.
 
     *Note:* In Windows PowerShell 5.1, the message NuGet provider is required to continue appears. Type **Y**, and press Enter. The installation can take several minutes.
 
+    It may take several minutes to install the module. You can continue with the next steps while the module is being installed in another tab of Windows Terminal. If you want to check whether the installation is finished, run the command `Get-InstalledModule -Name:'Microsoft.Graph'`. If the module is listed with a version, the installation is finished.
+
 1. Install the module **Microsoft.Entra**.
 
     ````powershell
