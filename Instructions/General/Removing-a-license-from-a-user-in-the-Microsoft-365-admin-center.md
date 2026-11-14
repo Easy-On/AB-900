@@ -57,6 +57,8 @@
 
     Verify that **\<license name\>** is no longer listed.
 
+    *Note:* The change can take up to 30 seconds to appear in the output. Execute the command again after a short time if the output shows the previous state.
+
 1. Disconnect from Microsoft Graph.
 
     ````powershell
@@ -102,6 +104,8 @@
     ````
 
     Verify that **\<license name\>** is no longer listed.
+
+    *Note:* The change can take up to 30 seconds to appear in the output. Execute the command again after a short time if the output shows the previous state.
 
 1. Disconnect from Microsoft Entra.
 

@@ -48,7 +48,7 @@
     $userPrincipalName = '' # Between the quotes insert the user principal name, for example user@<your tenant>.onmicrosoft.com
     $temporaryPassword = '' # Between the quotes insert a temporary password
     $usageLocation = '' # Between the quotes insert the two-letter country code of the user, for example AT
-    $licenseName = '' # Between the quotes insert the SKU part number of the license, for example ENTERPRISEPACK. To list the SKU part numbers, execute Get-MgSubscribedSku
+    $licenseName = '' # Between the quotes insert the SKU part number of the license, for example ENTERPRISEPACK. Leave the value empty if the user needs no license. To list the SKU part numbers, execute Get-MgSubscribedSku
     ````
 
 1. Create the user.
@@ -74,7 +74,7 @@
 
     Verify that the output shows the **DisplayName** and the **Id** of the user.
 
-1. Assign the license to the user.
+1. If the user needs a license, assign the license to the user.
 
     ````powershell
     $sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq $licenseName }
@@ -85,7 +85,7 @@
         -RemoveLicenses:@()
     ````
 
-1. Check the license of the user.
+1. If you assigned a license, check the license of the user.
 
     ````powershell
     Get-MgUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
@@ -118,7 +118,7 @@
     $userPrincipalName = '' # Between the quotes insert the user principal name, for example user@<your tenant>.onmicrosoft.com
     $temporaryPassword = '' # Between the quotes insert a temporary password
     $usageLocation = '' # Between the quotes insert the two-letter country code of the user, for example AT
-    $licenseName = '' # Between the quotes insert the SKU part number of the license, for example ENTERPRISEPACK. To list the SKU part numbers, execute Get-EntraSubscribedSku
+    $licenseName = '' # Between the quotes insert the SKU part number of the license, for example ENTERPRISEPACK. Leave the value empty if the user needs no license. To list the SKU part numbers, execute Get-EntraSubscribedSku
     ````
 
 1. Create the user.
@@ -143,7 +143,7 @@
 
     Verify that the output shows the **DisplayName** and the **Id** of the user.
 
-1. Assign the license to the user.
+1. If the user needs a license, assign the license to the user.
 
     ````powershell
     $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
@@ -158,7 +158,7 @@
         -AssignedLicenses:$licenses
     ````
 
-1. Check the license of the user.
+1. If you assigned a license, check the license of the user.
 
     ````powershell
     Get-EntraUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber

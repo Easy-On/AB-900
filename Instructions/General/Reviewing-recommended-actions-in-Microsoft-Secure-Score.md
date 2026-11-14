@@ -38,6 +38,8 @@
 
     Verify that the output shows three actions. **MaxScore** is the maximum number of points that you can gain with the action.
 
+    *Note:* The output contains all actions of Microsoft Secure Score, also for products that you do not use, and actions with the same **MaxScore**. The order can differ from the column **Rank** in the Microsoft Defender portal.
+
 1. Show the description and the remediation steps of the first action.
 
     ````powershell
