@@ -19,7 +19,7 @@
 
 1. Close the user panel by clicking the **X** icon in the upper-right corner of the pane.
 
-*Note:* Users need a Microsoft 365 license before you can assign a Copilot license to them. If the number of available licenses is 0, remove the license from another user first: [Removing a license from a user in the Microsoft 365 admin center](/Instructions/General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md). Copilot can take up to 24 hours to appear in some apps.
+*Note:* Users need a Microsoft 365 license before you can assign a Copilot license to them. If the number of available licenses is 0, remove the license from another user first: [Removing a license from a user in the Microsoft 365 admin center](Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md). Copilot can take up to 24 hours to appear in some apps.
 
 ## PowerShell
 

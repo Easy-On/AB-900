@@ -4,7 +4,7 @@
 
 Use a global administrator account of your tenant.
 
-To use PowerShell, you must have completed the practice [Install PowerShell modules for Microsoft 365 administration](/Instructions/Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
+To use PowerShell, you must have completed the practice [Install PowerShell modules for Microsoft 365 administration](Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
 ## Task
 

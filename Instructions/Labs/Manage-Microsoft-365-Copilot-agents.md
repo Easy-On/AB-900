@@ -4,7 +4,7 @@
 
 1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
 
-Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start. You must have completed the lab [Manage users, groups, and admin roles](/Instructions/Labs/Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab. Your instructor provides the name of a SharePoint site, **\<site name\>**, that you can use for the SharePoint agent.
+Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start. You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab. Your instructor provides the name of a SharePoint site, **\<site name\>**, that you can use for the SharePoint agent.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
     * **Name:** Contoso Sales Assistant
     * **Instructions:** Answer questions about the documents of the sales team.
 
-    [Creating a SharePoint agent](/Instructions/General/Creating-a-SharePoint-agent.md)
+    [Creating a SharePoint agent](../General/Creating-a-SharePoint-agent.md)
 
     Verify that the agent **Contoso Sales Assistant** answers a test prompt with content from the site.
 
@@ -33,7 +33,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 1. On **LON-CL1**, create a Copilot Chat agent with the description **Help the sales team write short status updates**, and create it with the name **Contoso Sales Helper**.
 
-    [Creating a Copilot Chat agent](/Instructions/General/Creating-a-Copilot-Chat-agent.md)
+    [Creating a Copilot Chat agent](../General/Creating-a-Copilot-Chat-agent.md)
 
     Verify that **Contoso Sales Helper** is listed under **Agents**.
 
@@ -41,13 +41,13 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 1. On **LON-CL1**, in Microsoft 365 Copilot, submit the agent **Contoso Sales Helper** to the org catalog, so that an administrator can approve it.
 
-    [Submitting an agent to the org catalog in Microsoft 365 Copilot](/Instructions/General/Submitting-an-agent-to-the-org-catalog-in-Microsoft-365-Copilot.md)
+    [Submitting an agent to the org catalog in Microsoft 365 Copilot](../General/Submitting-an-agent-to-the-org-catalog-in-Microsoft-365-Copilot.md)
 
     Verify that the message shows the state Waiting for approval.
 
 1. On **LON-CL1**, in the Microsoft 365 admin center, approve the agent request for **Contoso Sales Helper**, and publish the agent to the group **Sales Team**.
 
-    [Approving agents in the Microsoft 365 admin center](/Instructions/General/Approving-agents-in-the-Microsoft-365-admin-center.md)
+    [Approving agents in the Microsoft 365 admin center](../General/Approving-agents-in-the-Microsoft-365-admin-center.md)
 
     Verify that **Contoso Sales Helper** is no longer listed on the tab **Requests**.
 
@@ -61,7 +61,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
     | **Make the status update shorter and more formal.** | A shorter, more formal version of the previous status update |
     | **What is the capital of France?** | The agent answers or points out that it helps with status updates; note how the instructions of the agent influence the response |
 
-    [Chatting with an agent](/Instructions/General/Chatting-with-an-agent.md)
+    [Chatting with an agent](../General/Chatting-with-an-agent.md)
 
     Verify that each response matches the expected result.
 
@@ -73,7 +73,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
     | **Summarize the most recent document.** | A summary with a reference to a document from the site |
     | **What is the weather in Vienna today?** | The agent explains that it cannot retrieve the information |
 
-    [Chatting with an agent](/Instructions/General/Chatting-with-an-agent.md)
+    [Chatting with an agent](../General/Chatting-with-an-agent.md)
 
     Verify that the responses to the first two prompts contain references to documents from the site.
 
@@ -81,12 +81,12 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 1. On **LON-CL1**, block the agent **Contoso Sales Helper**.
 
-    [Managing agents in the Microsoft 365 admin center](/Instructions/General/Managing-agents-in-the-Microsoft-365-admin-center.md)
+    [Managing agents in the Microsoft 365 admin center](../General/Managing-agents-in-the-Microsoft-365-admin-center.md)
 
     Verify that the status of **Contoso Sales Helper** shows **Blocked**.
 
 1. On **LON-CL1**, unblock the agent **Contoso Sales Helper** again.
 
-    [Managing agents in the Microsoft 365 admin center](/Instructions/General/Managing-agents-in-the-Microsoft-365-admin-center.md)
+    [Managing agents in the Microsoft 365 admin center](../General/Managing-agents-in-the-Microsoft-365-admin-center.md)
 
     Verify that the status of **Contoso Sales Helper** shows **Available**.

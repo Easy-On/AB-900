@@ -25,7 +25,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a chat in Microsoft 365 Copilot Chat, and ask Copilot to summarize the document **Contoso Marketing Plan** in OneDrive.
 
-    [Starting a chat with Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot shows a summary of the document.
 
@@ -37,7 +37,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat, and ask Copilot the question **What is Contoso Marketing Plan about?**
 
-    [Starting a chat with Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that the new chat does not show the earlier conversation.
 
@@ -45,7 +45,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, in a new chat, ask Copilot to write a short, friendly email to the sales team that announces the new document **Contoso Marketing Plan**.
 
-    [Drafting an email with Microsoft 365 Copilot Chat](/Instructions/General/Drafting-an-email-with-Microsoft-365-Copilot-Chat.md)
+    [Drafting an email with Microsoft 365 Copilot Chat](../General/Drafting-an-email-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot shows an email draft that mentions **Contoso Marketing Plan**.
 
@@ -53,7 +53,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. In the same chat, ask Copilot to make the email more formal and shorter.
 
-    [Drafting an email with Microsoft 365 Copilot Chat](/Instructions/General/Drafting-an-email-with-Microsoft-365-Copilot-Chat.md)
+    [Drafting an email with Microsoft 365 Copilot Chat](../General/Drafting-an-email-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that the new draft is more formal and shorter than the first draft.
 
@@ -61,13 +61,13 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat, attach the file **Contoso Marketing Plan** from OneDrive, and send the prompt **Make suggestions for Contoso Marketing Plan.docx**.
 
-    [Attaching a file to a chat in Microsoft 365 Copilot Chat](/Instructions/General/Attaching-a-file-to-a-chat-in-Microsoft-365-Copilot-Chat.md)
+    [Attaching a file to a chat in Microsoft 365 Copilot Chat](../General/Attaching-a-file-to-a-chat-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot shows a list of suggested improvements for **Contoso Marketing Plan**.
 
 1. Ask Copilot the question **Which of the suggestions is the most important for the sales team, and why?**
 
-    [Starting a chat with Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot names one suggestion and gives a reason.
 
@@ -75,13 +75,13 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat, select the mode **Quick response**, and ask Copilot **Explain what a sensitivity label is in two sentences.** Note how long the answer takes.
 
-    [Choosing the response mode in Microsoft 365 Copilot Chat](/Instructions/General/Choosing-the-response-mode-in-Microsoft-365-Copilot-Chat.md)
+    [Choosing the response mode in Microsoft 365 Copilot Chat](../General/Choosing-the-response-mode-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot answers in two sentences.
 
 1. In the same chat, select the mode **Think deeper**, and ask the same question. Note how long the answer takes.
 
-    [Choosing the response mode in Microsoft 365 Copilot Chat](/Instructions/General/Choosing-the-response-mode-in-Microsoft-365-Copilot-Chat.md)
+    [Choosing the response mode in Microsoft 365 Copilot Chat](../General/Choosing-the-response-mode-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot answers in two sentences and that the drop-down list shows **Think deeper**.
 
@@ -91,13 +91,13 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat, and ask Copilot **What is a sensitivity label?** Then rename the chat to **Contoso Marketing Plan Review**.
 
-    [Renaming a chat in Microsoft 365 Copilot Chat](/Instructions/General/Renaming-a-chat-in-Microsoft-365-Copilot-Chat.md)
+    [Renaming a chat in Microsoft 365 Copilot Chat](../General/Renaming-a-chat-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that the list under **Chats** shows **Contoso Marketing Plan Review**.
 
 1. Delete the chat **Contoso Marketing Plan Review**.
 
-    [Deleting a chat in Microsoft 365 Copilot Chat](/Instructions/General/Deleting-a-chat-in-Microsoft-365-Copilot-Chat.md)
+    [Deleting a chat in Microsoft 365 Copilot Chat](../General/Deleting-a-chat-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that the chat is no longer listed under **Chats**.
 
@@ -105,13 +105,13 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat with the agent **Microsoft 365 Admin**, and ask the question **Which users have a Microsoft 365 Copilot license?**
 
-    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that the answer is shown under the name **Microsoft 365 Admin** and describes the steps in the Microsoft 365 admin center, for example **Billing**, **Licenses**.
 
 1. In the same chat, ask the agent **How do I reset the password of a user?**
 
-    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that the answer describes how to reset a password in the Microsoft 365 admin center.
 
@@ -119,13 +119,13 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
 1. On **LON-CL1**, start a new chat without an agent, and ask the question **How do I assign a license to a user?**
 
-    [Starting a chat with Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
 
     Verify that Copilot answers the question. Note the length and the structure of the answer.
 
 1. Start a new chat with the agent **Microsoft 365 Admin**, and ask the same question.
 
-    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](/Instructions/General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
+    [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
 
     Verify that the agent answers the question. Compare the answer with the answer of the chat without an agent, and note the differences.
 

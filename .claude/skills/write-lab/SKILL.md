@@ -7,14 +7,14 @@ description: Writes a lab (Markdown with sections Setup, Introduction, Exercises
 
 A lab is a longer exercise that participants complete independently, usually 15 minutes or more. The instructor does not demonstrate it. A lab states the goal of each step. The how-to for each step lives in a general instruction, which the step links to.
 
-Formatting and wording rules are in `CLAUDE.md` and apply to labs as well. This skill covers the structure of a lab only.
+Formatting and wording rules come from the repository instructions and apply to labs as well. This skill covers the structure of a lab only.
 
 ## Procedure
 
 1. **Gather information.** Needed: the module the lab belongs to (exactly one), the goal, the exercises and steps, the required VMs (if the lab uses local VMs), the sign-in accounts, the input data (names, groups, values), and preceding labs or practices with their catch-up scripts. If something essential is missing, ask.
-2. **Check the length.** If the work takes less than 15 minutes, or is demonstrated rather than done independently, it is a practice. Tell the user and use the skill [Write a practice](.claude/skills/write-practice/SKILL.md) instead.
-3. **Check the general instructions.** For each step that needs a how-to, search `Instructions/General/` for a matching file. If none exists, write it with the skill [Write a general instruction](.claude/skills/write-general-instructions/SKILL.md) before linking to it.
-4. **Check sources.** Read `CLAUDE.md` and the table of contents in `README.md`, which lists labs by module. Existing labs in `Instructions/Labs/` serve as style references.
+2. **Check the length.** If the work takes less than 15 minutes, or is demonstrated rather than done independently, it is a practice. Tell the user and use the skill [Write a practice](../write-practice/SKILL.md) instead.
+3. **Check the general instructions.** For each step that needs a how-to, search `Instructions/General/` for a matching file. If none exists, write it with the skill [Write a general instruction](../write-general-instructions/SKILL.md) before linking to it.
+4. **Check sources.** Read the table of contents in `README.md`, which lists labs by module. Existing labs in `Instructions/Labs/` serve as style references.
 5. **Create the file.** Place it in `Instructions/Labs/`. File name: words separated by hyphens, first word capitalized, product names keep their spelling, imperative or descriptive form (for example `Migrate-Active-Directory.md`). The H1 heading is `Lab: ` followed by the title with spaces instead of hyphens.
 6. **Check before handing over.** Go through the checklist below.
 
@@ -35,7 +35,7 @@ Write the lab content in English (US). Reply to the user in the language they us
 
 1. On **<machine>**, sign in as **<account>**.
 
-You must have completed the practice [<Practice title>](/Instructions/Practices/<Practice-file>.md). If you skipped the practice, on **<machine>**, run ````<script path>````.
+You must have completed the practice [<Practice title>](../Practices/<Practice-file>.md). If you skipped the practice, on **<machine>**, run ````<script path>````.
 
 ## Introduction
 
@@ -51,7 +51,7 @@ You must have completed the practice [<Practice title>](/Instructions/Practices/
 
     <Input data, if the step needs it>
 
-    [<General instruction title>](/Instructions/General/<General-file>.md)
+    [<General instruction title>](../General/<General-file>.md)
 
 1. <Next goal>.
 
@@ -69,7 +69,7 @@ You must have completed the practice [<Practice title>](/Instructions/Practices/
 
 - Start with the sign-ins, as a numbered list. Name the machine and the account for each sign-in.
 - Then name the prerequisites: each lab or practice the participant must have completed, with a link, and the catch-up script that replaces it if it was skipped.
-- Link to other labs and practices with a repository-absolute path, as `CLAUDE.md` requires.
+- Link to other labs and practices with a relative path.
 - The section contains no lab steps.
 - Never write negative requirements such as "No previous lab is required" or "No preparation is needed". If there is no prerequisite, omit the sentence.
 
@@ -89,7 +89,7 @@ You must have completed the practice [<Practice title>](/Instructions/Practices/
 - Each step states one goal and names the machine in its first words when the machine is not the one from the previous step, for example `On **VN1-SRV5**, ...`.
 - Each step should be completed on one single machine. A step must not require switching between machines. If a step requires multiple machines, split it into several steps.
 - A step with a how-to links to the matching general instruction in an indented paragraph below the step. Do not describe the clicks or PowerShell commands in the lab step.
-- If the step uses values, put them in a table with a header row, in a bullet list, or in a code block with variables. Empty variables for values the participant must enter get a comment, as `CLAUDE.md` requires.
+- If the step uses values, put them in a table with a header row, in a bullet list, or in a code block with variables. Empty variables for values the participant must enter get a comment.
 - A step that depends on an earlier step says so, for example `Use the variables from the previous step.`
 - If the participant must check the result, add an indented paragraph below the step, starting with `Verify that`.
 - Notes are indented paragraphs with `*Note:*`.
