@@ -7,7 +7,7 @@ description: Writes a general instruction (Markdown with one section per method,
 
 A general instruction explains how to perform one task, for example raising the forest functional level. Labs and practices link to it from a step, so the lab can state the goal and leave the how-to to the general instruction. A general instruction belongs to no lab, module, or machine.
 
-Formatting and wording rules are in `CLAUDE.md` and apply here as well. This skill covers the structure of a general instruction only.
+Formatting and wording rules come from the repository instructions and apply here as well. This skill covers the structure of a general instruction only.
 
 ## Procedure
 
@@ -62,7 +62,7 @@ Write the content in English (US). Reply to the user in the language they use.
 
 ## Steps
 
-- Each step contains one action on one page, panel, or dialog, as the CLAUDE.md rules require.
+- Each step contains one action on one page, panel, or dialog.
 - Every value that the reader enters is an empty variable or an empty entry in the code block, with a comment that tells the reader what to insert. The reader fills in the value; the instruction does not supply a real one unless the value is fixed by the task.
 - If a step has a visible result, add an indented paragraph below the step, for example `Verify that the forest mode is Windows2025Forest.`
 - Use `*Note:*` for a note, as an indented paragraph.

@@ -2,7 +2,7 @@
 
 ## Setup
 
-You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](/Instructions/Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
+You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
 ## Introduction
 
@@ -27,15 +27,15 @@ Create the following users. Use the values from the table. The users do not need
 
 1. On **LON-CL1**, create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
 
-    [Creating a user in the Microsoft 365 admin center](/Instructions/General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
+    [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
 1. Create the user **Irvin Sayers** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
 
-    [Creating a user in the Microsoft 365 admin center](/Instructions/General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
+    [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
 1. Create the user **Patti Fernandez** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
 
-    [Creating a user in the Microsoft 365 admin center](/Instructions/General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
+    [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that **Debra Berger**, **Irvin Sayers**, and **Patti Fernandez** are listed under **Active users**.
 
@@ -43,11 +43,11 @@ Create the following users. Use the values from the table. The users do not need
 
 1. On **LON-CL1**, reset the password of **Patti Fernandez**. Let Microsoft 365 create the password automatically, deactivate the requirement to change the password at the first sign-in, and note the new password.
 
-    [Resetting the password of a user in the Microsoft 365 admin center](/Instructions/General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
+    [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
 1. Block the sign-in of **Patti Fernandez**.
 
-    [Blocking the sign-in of a user in the Microsoft 365 admin center](/Instructions/General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
+    [Blocking the sign-in of a user in the Microsoft 365 admin center](../General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the user panel of **Patti Fernandez** shows **Sign-in blocked** below the name.
 
@@ -60,7 +60,7 @@ Create the following users. Use the values from the table. The users do not need
 1. Close the InPrivate window.
 1. Unblock the sign-in of **Patti Fernandez** again.
 
-    [Blocking the sign-in of a user in the Microsoft 365 admin center](/Instructions/General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
+    [Blocking the sign-in of a user in the Microsoft 365 admin center](../General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the user panel of **Patti Fernandez** no longer shows **Sign-in blocked** and that the button **Block sign-in** is available again.
 
@@ -74,7 +74,7 @@ Create the following users. Use the values from the table. The users do not need
     * **Owner:** Debra Berger
     * **Members:** Irvin Sayers and Patti Fernandez
 
-    [Creating a Microsoft 365 group](/Instructions/General/Creating-a-Microsoft-365-group.md)
+    [Creating a Microsoft 365 group](../General/Creating-a-Microsoft-365-group.md)
 
     Verify that **Sales Team** is listed under **Active teams & groups**.
 
@@ -82,7 +82,7 @@ Create the following users. Use the values from the table. The users do not need
 
 1. On **LON-CL1**, assign the role **Helpdesk Administrator** to **Irvin Sayers**.
 
-    [Assigning an admin role to a user](/Instructions/General/Assigning-an-admin-role-to-a-user.md)
+    [Assigning an admin role to a user](../General/Assigning-an-admin-role-to-a-user.md)
 
     Verify that **Helpdesk Administrator** is listed under **Roles** on the tab **Account** of the user panel of **Irvin Sayers**.
 
@@ -92,13 +92,13 @@ Create the following users. Use the values from the table. The users do not need
 
 1. As **Irvin Sayers**, reset the password of **Debra Berger**. Let Microsoft 365 create the password automatically, and deactivate the requirement to change the password at the first sign-in.
 
-    [Resetting the password of a user in the Microsoft 365 admin center](/Instructions/General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
+    [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the message Password has been reset is shown. A Helpdesk Administrator can reset the passwords of users without admin roles.
 
 1. As **Irvin Sayers**, try to reset the password of **admin@\<your tenant\>.onmicrosoft.com**.
 
-    [Resetting the password of a user in the Microsoft 365 admin center](/Instructions/General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
+    [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the message We could not reset the password for this user is shown. A Helpdesk Administrator cannot reset the password of a Global Administrator.
 

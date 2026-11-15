@@ -2,7 +2,7 @@
 
 ## Setup
 
-You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](/Instructions/Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
+You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
 ## Introduction
 
@@ -24,13 +24,13 @@ Contoso handles confidential documents. As the administrator, you create a sensi
     * **Scope:** Files & other data assets
     * **Encryption:** Do not encrypt files or emails
 
-    [Creating a sensitivity label](/Instructions/General/Creating-a-sensitivity-label.md)
+    [Creating a sensitivity label](../General/Creating-a-sensitivity-label.md)
 
     Verify that **Contoso Confidential** is listed on the page Labels.
 
 1. On **LON-CL1**, publish the label **Contoso Confidential** with a label policy named **Contoso Confidential Policy** to all users.
 
-    [Publishing a sensitivity label](/Instructions/General/Publishing-a-sensitivity-label.md)
+    [Publishing a sensitivity label](../General/Publishing-a-sensitivity-label.md)
 
     Verify that **Contoso Confidential Policy** is listed on the page Policies.
 
@@ -38,11 +38,11 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
 1. On **LON-CL1**, in OneDrive, create a Word document named **Contoso Strategy**.
 
-    [Creating a file in OneDrive](/Instructions/General/Creating-a-file-in-OneDrive.md)
+    [Creating a file in OneDrive](../General/Creating-a-file-in-OneDrive.md)
 
 1. On **LON-CL1**, in OneDrive, apply the label **Contoso Confidential** to the document **Contoso Strategy**.
 
-    [Applying a sensitivity label to a file](/Instructions/General/Applying-a-sensitivity-label-to-a-file.md)
+    [Applying a sensitivity label to a file](../General/Applying-a-sensitivity-label-to-a-file.md)
 
     Verify that **Contoso Strategy** shows the label **Contoso Confidential**.
 
@@ -50,7 +50,7 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
 1. On **LON-CL1**, share the document **Contoso Strategy** with **Amber Rodriguez** with the permission **Can view**.
 
-    [Sharing a file in OneDrive](/Instructions/General/Sharing-a-file-in-OneDrive.md)
+    [Sharing a file in OneDrive](../General/Sharing-a-file-in-OneDrive.md)
 
     Verify that **Amber Rodriguez** is listed under the access of **Contoso Strategy**.
 
@@ -58,7 +58,7 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
 1. As **Amber Rodriguez**, open the document **Contoso Strategy** that was shared with you.
 
-    [Opening a file shared with you in OneDrive](/Instructions/General/Opening-a-file-shared-with-you-in-OneDrive.md)
+    [Opening a file shared with you in OneDrive](../General/Opening-a-file-shared-with-you-in-OneDrive.md)
 
     Verify that the document opens in the mode Viewing, that you cannot edit it, and that it shows the label **Contoso Confidential**.
 
@@ -68,13 +68,13 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
 1. On **LON-CL1**, remove the access of **Amber Rodriguez** to the document **Contoso Strategy**.
 
-    [Removing access to a file in OneDrive](/Instructions/General/Removing-access-to-a-file-in-OneDrive.md)
+    [Removing access to a file in OneDrive](../General/Removing-access-to-a-file-in-OneDrive.md)
 
     Verify that **Amber Rodriguez** is no longer listed under the access of **Contoso Strategy**.
 
 1. In an InPrivate window, sign in to **https://www.office.com** as **AmberR@\<your tenant\>.onmicrosoft.com**, and try to open the document **Contoso Strategy**.
 
-    [Opening a file shared with you in OneDrive](/Instructions/General/Opening-a-file-shared-with-you-in-OneDrive.md)
+    [Opening a file shared with you in OneDrive](../General/Opening-a-file-shared-with-you-in-OneDrive.md)
 
     Verify that **Contoso Strategy** is no longer listed under **With you**, or that a message states that you need permission to access the document.
 
