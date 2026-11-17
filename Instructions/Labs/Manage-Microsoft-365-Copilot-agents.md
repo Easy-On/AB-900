@@ -2,7 +2,7 @@
 
 ## Setup
 
-You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** and its SharePoint site are used in this lab.
+You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab.
 
 1. On **LON-CL1**, open **Microsoft Edge**.
 1. In Microsoft Edge, navigate to **https://admin.microsoft.com**.
@@ -26,19 +26,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 ## Exercise 1: Create a SharePoint agent
 
-1. On **LON-CL1**, add **admin@\<your tenant\>.onmicrosoft.com** as a member to the group **Sales Team**, so that you can edit its SharePoint site.
-
-    [Adding a member to a Microsoft 365 group](../General/Adding-a-member-to-a-Microsoft-365-group.md)
-
-    Verify that your account is listed under **Members** of the group **Sales Team**.
-
-1. On **LON-CL1**, in the site **Sales Team** (**https://\<your tenant\>.sharepoint.com/sites/SalesTeam**), create a Word document named **Sales Report Q4** in the library **Documents** with the following text: **Contoso closed 12 deals in the fourth quarter. The largest deal was with Fabrikam. The sales team plans to visit Fabrikam in January.**
-
-    [Creating a file in a SharePoint document library](../General/Creating-a-file-in-a-SharePoint-document-library.md)
-
-    Verify that **Sales Report Q4** is listed in the library **Documents**.
-
-1. On **LON-CL1**, create a SharePoint agent for the site **Sales Team** (**https://\<your tenant\>.sharepoint.com/sites/SalesTeam**) with the following values:
+1. On **LON-CL1**, create a SharePoint agent for the site **Sales and Marketing** (**https://\<your tenant\>.sharepoint.com/sites/SalesandMarketing**) with the following values:
 
     * **Name:** Contoso Sales Assistant
     * **Instructions:** Answer questions about the documents of the sales team.
@@ -85,7 +73,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
     Verify that each response matches the expected result.
 
-1. On **LON-CL1**, in the site **Sales Team**, test the agent **Contoso Sales Assistant** with the following prompts.
+1. On **LON-CL1**, in the site **Sales and Marketing**, test the agent **Contoso Sales Assistant** with the following prompts.
 
     | Prompt | Expected result |
     | ------ | --------------- |
