@@ -61,9 +61,9 @@ Contoso wants to improve its security. As the administrator, you review the Micr
 
 ## Exercise 4: Trace administrative changes in the audit logs
 
-Audit logs record who changed which object in your tenant. In the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), you changed users, a group, and a role. Find these changes.
+Perform this exercise on **LON-CL1**. Audit logs record who changed which object in your tenant. In the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), you changed users, a group, and a role. Find these changes.
 
-1. On **LON-CL1**, in the audit logs, filter the entries to the category **UserManagement**, and find the entry **Add user** for **Patti Fernandez**.
+1. In the audit logs, filter the entries to the category **UserManagement**, and find the entry **Add user** for **Patti Fernandez**.
 
     [Reviewing audit logs in Microsoft Entra](../General/Reviewing-audit-logs-in-Microsoft-Entra.md)
 

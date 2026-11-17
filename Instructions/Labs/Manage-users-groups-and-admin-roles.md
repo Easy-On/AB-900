@@ -17,7 +17,7 @@ Contoso is hiring three employees for its sales department. As the administrator
 
 ## Exercise 1: Create users
 
-Create the following users. Use the values from the table. The users do not need a license for this lab, so select **Create user without product license** in the step Assign product licenses.
+Perform this exercise on **LON-CL1**. Create the following users. Use the values from the table. The users do not need a license for this lab, so select **Create user without product license** in the step Assign product licenses.
 
 | First name | Last name | Display name | User name |
 | ---------- | --------- | ------------ | --------- |
@@ -25,7 +25,7 @@ Create the following users. Use the values from the table. The users do not need
 | Irvin      | Sayers    | Irvin Sayers | IrvinS    |
 | Patti      | Fernandez | Patti Fernandez | PattiF |
 
-1. On **LON-CL1**, create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
+1. Create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
 
     [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 

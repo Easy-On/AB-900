@@ -26,9 +26,9 @@ Contoso wants to roll out Microsoft 365 Copilot to its sales team. All Copilot l
 
 ## Exercise 1: Free licenses
 
-The tenant has no available **Microsoft 365 Copilot** licenses. Remove the Copilot license from two users who do not need it for this lab.
+Perform this exercise on **LON-CL1**. The tenant has no available **Microsoft 365 Copilot** licenses. Remove the Copilot license from two users who do not need it for this lab.
 
-1. On **LON-CL1**, remove the license **Microsoft 365 Copilot (add-on)** from the user **Corey Gray**. Keep the license **Microsoft 365 E5 (no Teams)**.
+1. Remove the license **Microsoft 365 Copilot (add-on)** from the user **Corey Gray**. Keep the license **Microsoft 365 E5 (no Teams)**.
 
     [Removing a license from a user in the Microsoft 365 admin center](../General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md)
 

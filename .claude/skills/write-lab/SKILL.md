@@ -86,6 +86,7 @@ You must have completed the practice [<Practice title>](../Practices/<Practice-f
 ### Exercise steps
 
 - The numbered steps under an exercise are the tasks. A lab has no separate `Task` headings.
+- Every exercise and every task names its machine first: the first step starts with `On **<machine>**,`, even if the machine is the same as in the previous exercise. If an introductory paragraph comes before the steps, it starts with `Perform this exercise on **<machine>**.` (or `task`), and the first step does not repeat the machine.
 - Each step states one goal and names the machine in its first words when the machine is not the one from the previous step, for example `On **VN1-SRV5**, ...`.
 - Each step should be completed on one single machine. A step must not require switching between machines. If a step requires multiple machines, split it into several steps.
 - A step with a how-to links to the matching general instruction in an indented paragraph below the step. Do not describe the clicks or PowerShell commands in the lab step.
@@ -101,6 +102,7 @@ You must have completed the practice [<Practice title>](../Practices/<Practice-f
 - [ ] Sections appear in this order: Required VMs (only for local VMs), Setup, Introduction, Exercises, then the exercises.
 - [ ] Setup names the prerequisite labs and practices with their catch-up scripts first, then the sign-ins and other steps.
 - [ ] The exercise table of contents links to every exercise, and the anchors match the exercise headings.
+- [ ] Every exercise and task names its machine first, before any introductory text or step.
 - [ ] Every step states one goal and names its machine when the machine changes.
 - [ ] Every step with a how-to links to an existing general instruction, placed in an indented paragraph below the step.
 - [ ] Every step with a visible result has a verification paragraph.
