@@ -6,7 +6,11 @@ You must have completed the practice [Install PowerShell modules for Microsoft 3
 
 You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md). The lab uses the user **Patti Fernandez** and the blocked sign-in attempt of this user.
 
-1. On **LON-CL1**, sign in to the Microsoft Defender portal as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** or **Security Administrator** in your tenant.
+1. On **LON-CL1**, open **Microsoft Edge**.
+1. In Microsoft Edge, navigate to **https://security.microsoft.com**.
+1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
+
+    After signing in, you are in the **Microsoft Defender portal**, on the home page.
 
 ## Introduction
 
