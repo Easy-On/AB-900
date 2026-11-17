@@ -2,7 +2,11 @@
 
 ## Setup
 
-1. On **LON-CL1**, sign in to Microsoft 365 as **admin@\<your tenant\>.onmicrosoft.com**.
+1. On **LON-CL1**, open **Microsoft Edge**.
+1. In Microsoft Edge, navigate to **https://copilot.cloud.microsoft**.
+1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
+
+    After signing in, you are in **Microsoft 365 Copilot**, on the home page.
 
 Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start.
 

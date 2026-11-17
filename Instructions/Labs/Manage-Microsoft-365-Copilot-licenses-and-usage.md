@@ -4,7 +4,11 @@
 
 You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
-1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
+1. On **LON-CL1**, open **Microsoft Edge**.
+1. In Microsoft Edge, navigate to **https://admin.microsoft.com**.
+1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
+
+    After signing in, you are in the **Microsoft 365 admin center**, on the home page.
 
 ## Introduction
 
