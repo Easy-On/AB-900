@@ -39,13 +39,7 @@ Contoso wants to roll out Microsoft 365 Copilot to its sales team. You assign a 
 
 ## Exercise 1: Assign Copilot licenses
 
-1. On **LON-CL1**, assign a Microsoft 365 Copilot license to **Billie Vester**. Deactivate the check box for the welcome email.
-
-    [Assigning a Microsoft 365 Copilot license](../General/Assigning-a-Microsoft-365-Copilot-license.md)
-
-    Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 1.
-
-1. On **LON-CL1**, assign a Microsoft 365 Copilot license to **Adil Eli**. Deactivate the check box for the welcome email.
+1. On **LON-CL1**, assign a Microsoft 365 Copilot license to the users **Billie Vester** and **Adil Eli**. Deactivate the check box for the welcome email.
 
     [Assigning a Microsoft 365 Copilot license](../General/Assigning-a-Microsoft-365-Copilot-license.md)
 
