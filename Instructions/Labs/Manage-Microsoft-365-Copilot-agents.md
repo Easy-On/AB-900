@@ -29,7 +29,11 @@ Contoso wants its employees to use agents that answer questions about the sales 
 1. On **LON-CL1**, create a SharePoint agent for the site **Sales and Marketing** (**https://\<your tenant\>.sharepoint.com/sites/SalesandMarketing**) with the following values:
 
     * **Name:** Contoso Sales Assistant
-    * **Instructions:** Answer questions about the documents of the sales team.
+    * **Instructions:**
+
+        ````text
+        Answer questions about the documents of the sales team.
+        ````
 
     [Creating a SharePoint agent](../General/Creating-a-SharePoint-agent.md)
 
@@ -39,11 +43,13 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 1. On **LON-CL1**, create a Copilot Chat agent with the following values:
 
-    * **Description:** Help the sales team write short status updates
     * **Name:** Contoso Sales Helper
-    * **Instructions:** Write status updates for the sales team. Keep each status update under 80 words, and use a friendly, professional tone. If a question is not about a status update, explain that you only help with status updates.
+    * **Description:** Help the sales team write short status updates
+    * **Instructions:**
 
-    *Note:* The description is the prompt from which Agent Builder generates a draft with a name and instructions. You then replace the generated name and instructions with the values above.
+        ````text
+        Write status updates for the sales team. Keep each status update under 80 words, and use a friendly, professional tone. If a question is not about a status update, explain that you only help with status updates.
+        ````
 
     [Creating a Copilot Chat agent](../General/Creating-a-Copilot-Chat-agent.md)
 
