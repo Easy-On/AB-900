@@ -37,9 +37,13 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 ## Exercise 2: Create a Copilot Chat agent
 
-1. On **LON-CL1**, create a Copilot Chat agent with the name **Contoso Sales Helper**. In Agent Builder, describe the agent with the prompt **Help the sales team write short status updates**.
+1. On **LON-CL1**, create a Copilot Chat agent with the following values:
 
-    *Note:* The description is not the instructions of the agent. Agent Builder generates a draft with a name and instructions from the description.
+    * **Description:** Help the sales team write short status updates
+    * **Name:** Contoso Sales Helper
+    * **Instructions:** Write status updates for the sales team. Keep each status update under 80 words, and use a friendly, professional tone. If a question is not about a status update, explain that you only help with status updates.
+
+    *Note:* The description is the prompt from which Agent Builder generates a draft with a name and instructions. You then replace the generated name and instructions with the values above.
 
     [Creating a Copilot Chat agent](../General/Creating-a-Copilot-Chat-agent.md)
 
@@ -67,7 +71,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
     | ------ | --------------- |
     | **Write a short status update: we closed two deals with Fabrikam this week.** | A short status update that mentions Fabrikam and the two deals |
     | **Make the status update shorter and more formal.** | A shorter, more formal version of the previous status update |
-    | **What is the capital of France?** | The agent answers or points out that it helps with status updates; note how the instructions of the agent influence the response |
+    | **What is the capital of France?** | The agent explains that it only helps with status updates, as defined in its instructions |
 
     [Chatting with an agent](../General/Chatting-with-an-agent.md)
 
