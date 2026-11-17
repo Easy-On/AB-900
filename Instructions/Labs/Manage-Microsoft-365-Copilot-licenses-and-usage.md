@@ -34,7 +34,7 @@ Contoso wants to roll out Microsoft 365 Copilot to its sales team. You assign a 
 1. [Assign Copilot licenses](#exercise-1-assign-copilot-licenses)
 1. [Review Copilot usage](#exercise-2-review-copilot-usage)
 1. [Review the Copilot license report](#exercise-3-review-the-copilot-license-report)
-1. [Check the licenses of a user](#exercise-4-check-the-licenses-of-a-user)
+1. [Check the licenses of users](#exercise-4-check-the-licenses-of-users)
 1. [Move a Copilot license](#exercise-5-move-a-copilot-license)
 1. [Review the Copilot controls](#exercise-6-review-the-copilot-controls)
 
@@ -62,19 +62,18 @@ Contoso wants to roll out Microsoft 365 Copilot to its sales team. You assign a 
 
     Verify that the number of assigned licenses is 5 of 5 and that the list includes **Billie Vester** and **Adil Eli**.
 
-## Exercise 4: Check the licenses of a user
+## Exercise 4: Check the licenses of users
 
-1. On **LON-CL1**, check which licenses **Billie Vester** has.
-
-    [Checking the licenses of a user in the Microsoft 365 admin center](../General/Checking-the-licenses-of-a-user-in-the-Microsoft-365-admin-center.md)
-
-    Verify that the licenses **Microsoft 365 E5 (no Teams)** and **Microsoft 365 Copilot (add-on)** are activated.
-
-1. On **LON-CL1**, check which licenses **Cora Thomas** has.
+1. On **LON-CL1**, check which licenses the users **Billie Vester** and **Cora Thomas** have.
 
     [Checking the licenses of a user in the Microsoft 365 admin center](../General/Checking-the-licenses-of-a-user-in-the-Microsoft-365-admin-center.md)
 
-    Verify that the license **Microsoft 365 E5 (no Teams)** is activated and that the license **Microsoft 365 Copilot (add-on)** is deactivated.
+    Verify that the licenses match the following table.
+
+    | User          | Microsoft 365 E5 (no Teams) | Microsoft 365 Copilot (add-on) |
+    | ------------- | --------------------------- | ------------------------------ |
+    | Billie Vester | Activated                   | Activated                      |
+    | Cora Thomas   | Activated                   | Deactivated                    |
 
 ## Exercise 5: Move a Copilot license
 
