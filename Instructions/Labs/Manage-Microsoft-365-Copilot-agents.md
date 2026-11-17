@@ -2,9 +2,11 @@
 
 ## Setup
 
+You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab.
+
 1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
 
-Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start. You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab. Your instructor provides the name of a SharePoint site, **\<site name\>**, that you can use for the SharePoint agent.
+Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start. Your instructor provides the name of a SharePoint site, **\<site name\>**, that you can use for the SharePoint agent.
 
 ## Introduction
 

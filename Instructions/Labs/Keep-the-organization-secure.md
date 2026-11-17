@@ -2,11 +2,11 @@
 
 ## Setup
 
-1. On **LON-CL1**, sign in to the Microsoft Defender portal as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** or **Security Administrator** in your tenant.
-
 You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
 You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md). The lab uses the user **Patti Fernandez** and the blocked sign-in attempt of this user.
+
+1. On **LON-CL1**, sign in to the Microsoft Defender portal as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** or **Security Administrator** in your tenant.
 
 ## Introduction
 

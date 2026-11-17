@@ -2,9 +2,9 @@
 
 ## Setup
 
-1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
-
 You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
+
+1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
 
 ## Introduction
 
