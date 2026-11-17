@@ -14,10 +14,6 @@
 
     *Note:* You cannot change the name of the draft directly. Use the chat pane to change it.
 
-1. In the chat pane, click the prompt box **Message Agent Builder**, type **Replace the instructions with the following text: \<agent instructions\>**, and press **Enter**.
-
-    Verify that the draft shows the instructions **\<agent instructions\>**.
-
 1. In Agent Builder, in the upper-right corner, click **Create**.
 
     Verify that the message Your agent was created successfully is shown. The agent is private, which means that only you can use it.

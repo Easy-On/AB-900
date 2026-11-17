@@ -45,11 +45,8 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
     * **Name:** Contoso Sales Helper
     * **Description:** Help the sales team write short status updates
-    * **Instructions:**
 
-        ````text
-        Write status updates for the sales team. Keep each status update under 80 words, and use a friendly, professional tone. If a question is not about a status update, explain that you only help with status updates.
-        ````
+    *Note:* Agent Builder generates the instructions of the agent from the description. You do not enter instructions yourself.
 
     [Creating a Copilot Chat agent](../General/Creating-a-Copilot-Chat-agent.md)
 
@@ -77,7 +74,7 @@ Contoso wants its employees to use agents that answer questions about the sales 
     | ------ | --------------- |
     | **Write a short status update: we closed two deals with Fabrikam this week.** | A short status update that mentions Fabrikam and the two deals |
     | **Make the status update shorter and more formal.** | A shorter, more formal version of the previous status update |
-    | **What is the capital of France?** | The agent explains that it only helps with status updates, as defined in its instructions |
+    | **What is the capital of France?** | The agent answers or points out that it helps with status updates; note how the generated instructions of the agent influence the response |
 
     [Chatting with an agent](../General/Chatting-with-an-agent.md)
 
