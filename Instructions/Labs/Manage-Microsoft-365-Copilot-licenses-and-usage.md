@@ -22,7 +22,8 @@ The tenant has no available **Microsoft 365 Copilot (add-on)** licenses. To free
     Verify that the message Your changes have been saved is shown, and that the check box **Microsoft 365 Copilot (add-on)** is cleared.
 
 1. Click the *Close* icon (the **X** icon) in the upper-right corner of the user panel.
-1. Repeat from step 5 for the user **Hadar Caspit**.
+
+Repeat from step 5 for the user **Hadar Caspit**.
 
 ## Introduction
 
