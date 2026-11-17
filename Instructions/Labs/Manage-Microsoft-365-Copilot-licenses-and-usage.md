@@ -26,15 +26,15 @@ Contoso wants to roll out Microsoft 365 Copilot to its sales team. All Copilot l
 
 ## Exercise 1: Free licenses
 
-Perform this exercise on **LON-CL1**. The tenant has no available **Microsoft 365 Copilot** licenses. Remove the Copilot license from two users who do not need it for this lab.
+The tenant has no available **Microsoft 365 Copilot** licenses. Remove the Copilot license from two users who do not need it for this lab.
 
-1. Remove the license **Microsoft 365 Copilot (add-on)** from the user **Corey Gray**. Keep the license **Microsoft 365 E5 (no Teams)**.
+1. On **LON-CL1**, remove the license **Microsoft 365 Copilot (add-on)** from the user **Corey Gray**. Keep the license **Microsoft 365 E5 (no Teams)**.
 
     [Removing a license from a user in the Microsoft 365 admin center](../General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 1.
 
-1. Remove the license **Microsoft 365 Copilot (add-on)** from the user **Hadar Caspit**. Keep the license **Microsoft 365 E5 (no Teams)**.
+1. On **LON-CL1**, remove the license **Microsoft 365 Copilot (add-on)** from the user **Hadar Caspit**. Keep the license **Microsoft 365 E5 (no Teams)**.
 
     [Removing a license from a user in the Microsoft 365 admin center](../General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md)
 
@@ -48,7 +48,7 @@ Perform this exercise on **LON-CL1**. The tenant has no available **Microsoft 36
 
     Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 1.
 
-1. Assign a Microsoft 365 Copilot license to **Adil Eli**. Deactivate the check box for the welcome email.
+1. On **LON-CL1**, assign a Microsoft 365 Copilot license to **Adil Eli**. Deactivate the check box for the welcome email.
 
     [Assigning a Microsoft 365 Copilot license](../General/Assigning-a-Microsoft-365-Copilot-license.md)
 
@@ -78,7 +78,7 @@ Perform this exercise on **LON-CL1**. The tenant has no available **Microsoft 36
 
     Verify that the licenses **Microsoft 365 E5 (no Teams)** and **Microsoft 365 Copilot (add-on)** are activated.
 
-1. Check which licenses **Cora Thomas** has.
+1. On **LON-CL1**, check which licenses **Cora Thomas** has.
 
     [Checking the licenses of a user in the Microsoft 365 admin center](../General/Checking-the-licenses-of-a-user-in-the-Microsoft-365-admin-center.md)
 
@@ -92,7 +92,7 @@ Perform this exercise on **LON-CL1**. The tenant has no available **Microsoft 36
 
     Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 1.
 
-1. Assign the license **Microsoft 365 Copilot (add-on)** to **Cora Thomas**. Deactivate the check box for the welcome email.
+1. On **LON-CL1**, assign the license **Microsoft 365 Copilot (add-on)** to **Cora Thomas**. Deactivate the check box for the welcome email.
 
     [Assigning a Microsoft 365 Copilot license](../General/Assigning-a-Microsoft-365-Copilot-license.md)
 

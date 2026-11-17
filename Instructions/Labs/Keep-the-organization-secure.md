@@ -35,7 +35,7 @@ Contoso wants to improve its security. As the administrator, you review the Micr
 
     [Reviewing recommended actions in Microsoft Secure Score](../General/Reviewing-recommended-actions-in-Microsoft-Secure-Score.md)
 
-1. Set the status of this recommended action to **Planned**, with the action plan note **Review in the next security meeting**.
+1. On **LON-CL1**, set the status of this recommended action to **Planned**, with the action plan note **Review in the next security meeting**.
 
     [Changing the status of a recommended action in Microsoft Secure Score](../General/Changing-the-status-of-a-recommended-action-in-Microsoft-Secure-Score.md)
 
@@ -61,21 +61,21 @@ Contoso wants to improve its security. As the administrator, you review the Micr
 
 ## Exercise 4: Trace administrative changes in the audit logs
 
-Perform this exercise on **LON-CL1**. Audit logs record who changed which object in your tenant. In the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), you changed users, a group, and a role. Find these changes.
+Audit logs record who changed which object in your tenant. In the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), you changed users, a group, and a role. Find these changes.
 
-1. In the audit logs, filter the entries to the category **UserManagement**, and find the entry **Add user** for **Patti Fernandez**.
+1. On **LON-CL1**, in the audit logs, filter the entries to the category **UserManagement**, and find the entry **Add user** for **Patti Fernandez**.
 
     [Reviewing audit logs in Microsoft Entra](../General/Reviewing-audit-logs-in-Microsoft-Entra.md)
 
     Verify that the tab **Target(s)** of the entry shows the user principal name **PattiF@\<your tenant\>.onmicrosoft.com**.
 
-1. Find the entry **Reset user password** that belongs to **Patti Fernandez**. Note who initiated the change.
+1. On **LON-CL1**, find the entry **Reset user password** that belongs to **Patti Fernandez**. Note who initiated the change.
 
     [Reviewing audit logs in Microsoft Entra](../General/Reviewing-audit-logs-in-Microsoft-Entra.md)
 
     Verify that the tab **Target(s)** shows **PattiF@\<your tenant\>.onmicrosoft.com**.
 
-1. Find the entry **Disable account** that belongs to the blocked sign-in of **Patti Fernandez**. Note the date and time.
+1. On **LON-CL1**, find the entry **Disable account** that belongs to the blocked sign-in of **Patti Fernandez**. Note the date and time.
 
     [Reviewing audit logs in Microsoft Entra](../General/Reviewing-audit-logs-in-Microsoft-Entra.md)
 
@@ -91,7 +91,7 @@ Perform this exercise on **LON-CL1**. Audit logs record who changed which object
 
     Verify that the page lists the policies, or shows the introduction What is Conditional Access? if the tenant has no policies.
 
-1. Check whether security defaults are enabled in the tenant. Do not change the value.
+1. On **LON-CL1**, check whether security defaults are enabled in the tenant. Do not change the value.
 
     [Checking Conditional Access policies and security defaults](../General/Checking-Conditional-Access-policies-and-security-defaults.md)
 
@@ -107,7 +107,7 @@ Perform this exercise on **LON-CL1**. Audit logs record who changed which object
 
     Verify that the page lists the authentication methods with the columns **Method**, **Target**, and **Enabled**.
 
-1. Open the policy of the method **Microsoft Authenticator**, and note which users it targets. Do not change any value.
+1. On **LON-CL1**, open the policy of the method **Microsoft Authenticator**, and note which users it targets. Do not change any value.
 
     [Reviewing the authentication method policies in Microsoft Entra](../General/Reviewing-the-authentication-method-policies-in-Microsoft-Entra.md)
 
@@ -131,7 +131,7 @@ Perform this exercise on **LON-CL1**. Audit logs record who changed which object
 
     *Note:* Microsoft recommends fewer than five Global Administrators and at least two, so that one account is always available.
 
-1. Review who has the role **Global Reader**.
+1. On **LON-CL1**, review who has the role **Global Reader**.
 
     [Reviewing the members of an admin role in Microsoft Entra](../General/Reviewing-the-members-of-an-admin-role-in-Microsoft-Entra.md)
 
@@ -153,7 +153,7 @@ Perform this exercise on **LON-CL1**. Audit logs record who changed which object
 
     Verify that the list shows sign-ins of **admin@\<your tenant\>.onmicrosoft.com**.
 
-1. Open the most recent sign-in, and note the **IP address** and the **Operating system** on the tabs **Location** and **Device info**.
+1. On **LON-CL1**, open the most recent sign-in, and note the **IP address** and the **Operating system** on the tabs **Location** and **Device info**.
 
     [Reviewing sign-in logs in Microsoft Entra](../General/Reviewing-sign-in-logs-in-Microsoft-Entra.md)
 

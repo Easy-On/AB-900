@@ -17,7 +17,7 @@ Contoso is hiring three employees for its sales department. As the administrator
 
 ## Exercise 1: Create users
 
-Perform this exercise on **LON-CL1**. Create the following users. Use the values from the table. The users do not need a license for this lab, so select **Create user without product license** in the step Assign product licenses.
+Create the following users. Use the values from the table. The users do not need a license for this lab, so select **Create user without product license** in the step Assign product licenses.
 
 | First name | Last name | Display name | User name |
 | ---------- | --------- | ------------ | --------- |
@@ -25,15 +25,15 @@ Perform this exercise on **LON-CL1**. Create the following users. Use the values
 | Irvin      | Sayers    | Irvin Sayers | IrvinS    |
 | Patti      | Fernandez | Patti Fernandez | PattiF |
 
-1. Create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
+1. On **LON-CL1**, create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
 
     [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
-1. Create the user **Irvin Sayers** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
+1. On **LON-CL1**, create the user **Irvin Sayers** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
 
     [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
-1. Create the user **Patti Fernandez** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
+1. On **LON-CL1**, create the user **Patti Fernandez** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
 
     [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
@@ -45,20 +45,20 @@ Perform this exercise on **LON-CL1**. Create the following users. Use the values
 
     [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
-1. Block the sign-in of **Patti Fernandez**.
+1. On **LON-CL1**, block the sign-in of **Patti Fernandez**.
 
     [Blocking the sign-in of a user in the Microsoft 365 admin center](../General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the user panel of **Patti Fernandez** shows **Sign-in blocked** below the name.
 
-1. In an InPrivate window, try to sign in to **https://www.office.com** as **PattiF@\<your tenant\>.onmicrosoft.com** with the new password from the first step.
+1. On **LON-CL1**, in an InPrivate window, try to sign in to **https://www.office.com** as **PattiF@\<your tenant\>.onmicrosoft.com** with the new password from the first step.
 
     Verify that the sign-in fails with the message Your account has been locked. Contact your support person to unlock it, then try again.
 
     *Note:* The block can take a few minutes to take effect. If the sign-in succeeds, close the InPrivate window, wait a few minutes, and try again.
 
-1. Close the InPrivate window.
-1. Unblock the sign-in of **Patti Fernandez** again.
+1. On **LON-CL1**, close the InPrivate window.
+1. On **LON-CL1**, unblock the sign-in of **Patti Fernandez** again.
 
     [Blocking the sign-in of a user in the Microsoft 365 admin center](../General/Blocking-the-sign-in-of-a-user-in-the-Microsoft-365-admin-center.md)
 
@@ -86,20 +86,20 @@ Perform this exercise on **LON-CL1**. Create the following users. Use the values
 
     Verify that **Helpdesk Administrator** is listed under **Roles** on the tab **Account** of the user panel of **Irvin Sayers**.
 
-1. In an InPrivate window, sign in to **https://admin.microsoft.com** as **IrvinS@\<your tenant\>.onmicrosoft.com** with the password from Exercise 1.
+1. On **LON-CL1**, in an InPrivate window, sign in to **https://admin.microsoft.com** as **IrvinS@\<your tenant\>.onmicrosoft.com** with the password from Exercise 1.
 
     Verify that the **Microsoft 365 admin center** opens.
 
-1. As **Irvin Sayers**, reset the password of **Debra Berger**. Let Microsoft 365 create the password automatically, and deactivate the requirement to change the password at the first sign-in.
+1. On **LON-CL1**, as **Irvin Sayers**, reset the password of **Debra Berger**. Let Microsoft 365 create the password automatically, and deactivate the requirement to change the password at the first sign-in.
 
     [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the message Password has been reset is shown. A Helpdesk Administrator can reset the passwords of users without admin roles.
 
-1. As **Irvin Sayers**, try to reset the password of **admin@\<your tenant\>.onmicrosoft.com**.
+1. On **LON-CL1**, as **Irvin Sayers**, try to reset the password of **admin@\<your tenant\>.onmicrosoft.com**.
 
     [Resetting the password of a user in the Microsoft 365 admin center](../General/Resetting-the-password-of-a-user-in-the-Microsoft-365-admin-center.md)
 
     Verify that the message We could not reset the password for this user is shown. A Helpdesk Administrator cannot reset the password of a Global Administrator.
 
-1. Close the InPrivate window to sign out **Irvin Sayers**.
+1. On **LON-CL1**, close the InPrivate window to sign out **Irvin Sayers**.

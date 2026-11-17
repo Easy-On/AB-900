@@ -54,15 +54,15 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
     Verify that **Amber Rodriguez** is listed under the access of **Contoso Strategy**.
 
-1. In an InPrivate window, sign in to **https://www.office.com** as **AmberR@\<your tenant\>.onmicrosoft.com** with the password from the field **User password** of the lab environment.
+1. On **LON-CL1**, in an InPrivate window, sign in to **https://www.office.com** as **AmberR@\<your tenant\>.onmicrosoft.com** with the password from the field **User password** of the lab environment.
 
-1. As **Amber Rodriguez**, open the document **Contoso Strategy** that was shared with you.
+1. On **LON-CL1**, as **Amber Rodriguez**, open the document **Contoso Strategy** that was shared with you.
 
     [Opening a file shared with you in OneDrive](../General/Opening-a-file-shared-with-you-in-OneDrive.md)
 
     Verify that the document opens in the mode Viewing, that you cannot edit it, and that it shows the label **Contoso Confidential**.
 
-1. Close the InPrivate window to sign out **Amber Rodriguez**.
+1. On **LON-CL1**, close the InPrivate window to sign out **Amber Rodriguez**.
 
 ## Exercise 4: Remove access to the document
 
@@ -72,10 +72,10 @@ Contoso handles confidential documents. As the administrator, you create a sensi
 
     Verify that **Amber Rodriguez** is no longer listed under the access of **Contoso Strategy**.
 
-1. In an InPrivate window, sign in to **https://www.office.com** as **AmberR@\<your tenant\>.onmicrosoft.com**, and try to open the document **Contoso Strategy**.
+1. On **LON-CL1**, in an InPrivate window, sign in to **https://www.office.com** as **AmberR@\<your tenant\>.onmicrosoft.com**, and try to open the document **Contoso Strategy**.
 
     [Opening a file shared with you in OneDrive](../General/Opening-a-file-shared-with-you-in-OneDrive.md)
 
     Verify that **Contoso Strategy** is no longer listed under **With you**, or that a message states that you need permission to access the document.
 
-1. Close the InPrivate window to sign out **Amber Rodriguez**.
+1. On **LON-CL1**, close the InPrivate window to sign out **Amber Rodriguez**.
