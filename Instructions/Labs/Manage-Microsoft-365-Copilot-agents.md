@@ -2,9 +2,15 @@
 
 ## Setup
 
-1. On **LON-CL1**, sign in to the Microsoft 365 admin center as **admin@\<your tenant\>.onmicrosoft.com**. Use an account with the role **Global Administrator** in your tenant.
+You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab.
 
-Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start. You must have completed the lab [Manage users, groups, and admin roles](Manage-users-groups-and-admin-roles.md), because the group **Sales Team** is used in this lab. Your instructor provides the name of a SharePoint site, **\<site name\>**, that you can use for the SharePoint agent.
+1. On **LON-CL1**, open **Microsoft Edge**.
+1. In Microsoft Edge, navigate to **https://admin.microsoft.com**.
+1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
+
+    After signing in, you are in the **Microsoft 365 admin center**, on the home page.
+
+Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start.
 
 ## Introduction
 
@@ -20,10 +26,14 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 ## Exercise 1: Create a SharePoint agent
 
-1. On **LON-CL1**, create a SharePoint agent for the site **\<site name\>** with the following values:
+1. On **LON-CL1**, create a SharePoint agent for the site **Sales and Marketing** (**https://\<your tenant\>.sharepoint.com/sites/SalesandMarketing**) with the following values:
 
     * **Name:** Contoso Sales Assistant
-    * **Instructions:** Answer questions about the documents of the sales team.
+    * **Instructions:**
+
+        ````text
+        Answer questions about the documents of the sales team.
+        ````
 
     [Creating a SharePoint agent](../General/Creating-a-SharePoint-agent.md)
 
@@ -31,7 +41,12 @@ Contoso wants its employees to use agents that answer questions about the sales 
 
 ## Exercise 2: Create a Copilot Chat agent
 
-1. On **LON-CL1**, create a Copilot Chat agent with the description **Help the sales team write short status updates**, and create it with the name **Contoso Sales Helper**.
+1. On **LON-CL1**, create a Copilot Chat agent with the following values:
+
+    * **Name:** Contoso Sales Helper
+    * **Description:** Help the sales team write short status updates
+
+    *Note:* Agent Builder generates the instructions of the agent from the description. You do not enter instructions yourself.
 
     [Creating a Copilot Chat agent](../General/Creating-a-Copilot-Chat-agent.md)
 
@@ -59,13 +74,13 @@ Contoso wants its employees to use agents that answer questions about the sales 
     | ------ | --------------- |
     | **Write a short status update: we closed two deals with Fabrikam this week.** | A short status update that mentions Fabrikam and the two deals |
     | **Make the status update shorter and more formal.** | A shorter, more formal version of the previous status update |
-    | **What is the capital of France?** | The agent answers or points out that it helps with status updates; note how the instructions of the agent influence the response |
+    | **What is the capital of France?** | The agent answers or points out that it helps with status updates; note how the generated instructions of the agent influence the response |
 
     [Chatting with an agent](../General/Chatting-with-an-agent.md)
 
     Verify that each response matches the expected result.
 
-1. On **LON-CL1**, in the site **\<site name\>**, test the agent **Contoso Sales Assistant** with the following prompts.
+1. On **LON-CL1**, in the site **Sales and Marketing**, test the agent **Contoso Sales Assistant** with the following prompts.
 
     | Prompt | Expected result |
     | ------ | --------------- |

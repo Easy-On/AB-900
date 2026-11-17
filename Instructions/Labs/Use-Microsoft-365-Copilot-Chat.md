@@ -2,7 +2,11 @@
 
 ## Setup
 
-1. On **LON-CL1**, sign in to Microsoft 365 as **admin@\<your tenant\>.onmicrosoft.com**.
+1. On **LON-CL1**, open **Microsoft Edge**.
+1. In Microsoft Edge, navigate to **https://copilot.cloud.microsoft**.
+1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
+
+    After signing in, you are in **Microsoft 365 Copilot**, on the home page.
 
 Your account must have a Microsoft 365 Copilot license. If it does not, ask your instructor to assign one before you start.
 
@@ -51,7 +55,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     *Important:* Do not send the email.
 
-1. In the same chat, ask Copilot to make the email more formal and shorter.
+1. On **LON-CL1**, in the same chat, ask Copilot to make the email more formal and shorter.
 
     [Drafting an email with Microsoft 365 Copilot Chat](../General/Drafting-an-email-with-Microsoft-365-Copilot-Chat.md)
 
@@ -65,7 +69,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     Verify that Copilot shows a list of suggested improvements for **Contoso Marketing Plan**.
 
-1. Ask Copilot the question **Which of the suggestions is the most important for the sales team, and why?**
+1. On **LON-CL1**, ask Copilot the question **Which of the suggestions is the most important for the sales team, and why?**
 
     [Starting a chat with Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-Microsoft-365-Copilot-Chat.md)
 
@@ -79,7 +83,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     Verify that Copilot answers in two sentences.
 
-1. In the same chat, select the mode **Think deeper**, and ask the same question. Note how long the answer takes.
+1. On **LON-CL1**, in the same chat, select the mode **Think deeper**, and ask the same question. Note how long the answer takes.
 
     [Choosing the response mode in Microsoft 365 Copilot Chat](../General/Choosing-the-response-mode-in-Microsoft-365-Copilot-Chat.md)
 
@@ -95,7 +99,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     Verify that the list under **Chats** shows **Contoso Marketing Plan Review**.
 
-1. Delete the chat **Contoso Marketing Plan Review**.
+1. On **LON-CL1**, delete the chat **Contoso Marketing Plan Review**.
 
     [Deleting a chat in Microsoft 365 Copilot Chat](../General/Deleting-a-chat-in-Microsoft-365-Copilot-Chat.md)
 
@@ -109,7 +113,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     Verify that the answer is shown under the name **Microsoft 365 Admin** and describes the steps in the Microsoft 365 admin center, for example **Billing**, **Licenses**.
 
-1. In the same chat, ask the agent **How do I reset the password of a user?**
+1. On **LON-CL1**, in the same chat, ask the agent **How do I reset the password of a user?**
 
     [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
 
@@ -123,7 +127,7 @@ Contoso wants its employees to use Microsoft 365 Copilot Chat to work faster wit
 
     Verify that Copilot answers the question. Note the length and the structure of the answer.
 
-1. Start a new chat with the agent **Microsoft 365 Admin**, and ask the same question.
+1. On **LON-CL1**, start a new chat with the agent **Microsoft 365 Admin**, and ask the same question.
 
     [Starting a chat with a predefined agent in Microsoft 365 Copilot Chat](../General/Starting-a-chat-with-a-predefined-agent-in-Microsoft-365-Copilot-Chat.md)
 
