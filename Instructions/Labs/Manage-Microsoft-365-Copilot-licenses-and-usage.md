@@ -4,25 +4,25 @@
 
 You must have completed the practice [Install PowerShell modules for Microsoft 365 administration](../Practices/Install-PowerShell-modules-for-Microsoft-365-administration.md).
 
+The tenant has no available **Microsoft 365 Copilot (add-on)** licenses. To free two licenses for this lab, remove the Copilot license from the users **Corey Gray** and **Hadar Caspit**, who do not need it.
+
 1. On **LON-CL1**, open **Microsoft Edge**.
 1. In Microsoft Edge, navigate to **https://admin.microsoft.com**.
 1. Sign in as **admin@\<your tenant\>.onmicrosoft.com**. This account is a global administrator of your tenant.
 
     After signing in, you are in the **Microsoft 365 admin center**, on the home page.
 
-The tenant has no available **Microsoft 365 Copilot (add-on)** licenses. To free two licenses for this lab, remove the Copilot license from two users who do not need it.
+1. In the Microsoft 365 admin center, in the navigation pane, expand **Users**, and click **Active users**.
+1. In Active users, click the search box, type **Corey Gray**, and press **Enter**.
+1. Click the name **Corey Gray**.
+1. In the user panel of **Corey Gray**, click the tab **Licenses and apps**.
+1. On the tab Licenses and apps, under **Licenses**, clear the check box **Microsoft 365 Copilot (add-on)**. Keep the check box **Microsoft 365 E5 (no Teams)** activated.
+1. Click **Save changes**.
 
-1. On **LON-CL1**, remove the license **Microsoft 365 Copilot (add-on)** from the user **Corey Gray**. Keep the license **Microsoft 365 E5 (no Teams)**.
+    Verify that the message Your changes have been saved is shown, and that the check box **Microsoft 365 Copilot (add-on)** is cleared.
 
-    [Removing a license from a user in the Microsoft 365 admin center](../General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md)
-
-    Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 1.
-
-1. On **LON-CL1**, remove the license **Microsoft 365 Copilot (add-on)** from the user **Hadar Caspit**. Keep the license **Microsoft 365 E5 (no Teams)**.
-
-    [Removing a license from a user in the Microsoft 365 admin center](../General/Removing-a-license-from-a-user-in-the-Microsoft-365-admin-center.md)
-
-    Verify that the number of available licenses of **Microsoft 365 Copilot (add-on)** is 2.
+1. Click the *Close* icon (the **X** icon) in the upper-right corner of the user panel.
+1. Repeat from step 5 for the user **Hadar Caspit**.
 
 ## Introduction
 
