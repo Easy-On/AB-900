@@ -17,23 +17,13 @@ Contoso is hiring three employees for its sales department. As the administrator
 
 ## Exercise 1: Create users
 
-Create the following users. Use the values from the table. The users do not need a license for this lab, so select **Create user without product license** in the step Assign product licenses.
+1. On **LON-CL1**, create the following users without a product license. Use the same password of your choice for all users, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
 
-| First name | Last name | Display name | User name |
-| ---------- | --------- | ------------ | --------- |
-| Debra      | Berger    | Debra Berger | DebraB    |
-| Irvin      | Sayers    | Irvin Sayers | IrvinS    |
-| Patti      | Fernandez | Patti Fernandez | PattiF |
-
-1. On **LON-CL1**, create the user **Debra Berger** from the table, without a license. Use a password of your choice, deactivate the requirement to change the password at the first sign-in, and note the password, because you need it in Exercise 4.
-
-    [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
-
-1. On **LON-CL1**, create the user **Irvin Sayers** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
-
-    [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
-
-1. On **LON-CL1**, create the user **Patti Fernandez** from the table, without a license, and with the same password. The user does not have to change the password at the first sign-in.
+    | First name | Last name | Display name    | User name |
+    | ---------- | --------- | --------------- | --------- |
+    | Debra      | Berger    | Debra Berger    | DebraB    |
+    | Irvin      | Sayers    | Irvin Sayers    | IrvinS    |
+    | Patti      | Fernandez | Patti Fernandez | PattiF    |
 
     [Creating a user in the Microsoft 365 admin center](../General/Creating-a-user-in-the-Microsoft-365-admin-center.md)
 
