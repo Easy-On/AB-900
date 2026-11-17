@@ -67,8 +67,8 @@ You must have completed the practice [<Practice title>](../Practices/<Practice-f
 
 ### Setup
 
-- Start with the sign-ins, as a numbered list. Name the machine and the account for each sign-in.
-- Then name the prerequisites: each lab or practice the participant must have completed, with a link, and the catch-up script that replaces it if it was skipped.
+- Start with the prerequisites: each lab or practice the participant must have completed, with a link, and the catch-up script that replaces it if it was skipped.
+- Then list the sign-ins and any other steps, as a numbered list. Name the machine and the account for each sign-in.
 - Link to other labs and practices with a relative path.
 - The section contains no lab steps.
 - Never write negative requirements such as "No previous lab is required" or "No preparation is needed". If there is no prerequisite, omit the sentence.
@@ -99,7 +99,7 @@ You must have completed the practice [<Practice title>](../Practices/<Practice-f
 - [ ] Title: `# Lab: <Title>`, and the file name in `Instructions/Labs/` matches the title with hyphens.
 - [ ] The lab belongs to exactly one module and takes 15 minutes or more.
 - [ ] Sections appear in this order: Required VMs (only for local VMs), Setup, Introduction, Exercises, then the exercises.
-- [ ] Setup names the sign-ins, and the catch-up scripts for skipped labs and practices.
+- [ ] Setup names the prerequisite labs and practices with their catch-up scripts first, then the sign-ins and other steps.
 - [ ] The exercise table of contents links to every exercise, and the anchors match the exercise headings.
 - [ ] Every step states one goal and names its machine when the machine changes.
 - [ ] Every step with a how-to links to an existing general instruction, placed in an indented paragraph below the step.

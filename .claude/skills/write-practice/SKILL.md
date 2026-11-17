@@ -64,6 +64,7 @@ Perform this task on **<machine>**.
 - **Dependencies:** Link other labs or practices with a relative link, for example `[Install Remote Server Administration Tools](Install-Remote-Server-Administration-Tools.md)`. Add a sentence such as "If you skipped the practice [...], ...".
 - **Catch-up script:** If a script covers skipped parts, describe the call completely, for example: in **PowerShell**, execute `C:\LabResources\Solutions\<ScriptName>.ps1`, and name the machine.
 - **Prerequisites:** Explicitly name any sign-in to a computer, service, or portal (account, portal URL) that is needed before the task.
+- **Order:** Dependencies and catch-up script come first, before the sign-ins and any other steps.
 - If none of this applies, omit this section. Never write negative requirements such as "No preparation is needed" or "No previous lab is required".
 
 ## Section Task
@@ -88,7 +89,7 @@ If the practice switches machines, every subsection starts with such a sentence.
 - [ ] Title: `# Practice: <Task>`, and the file name matches the title with hyphens.
 - [ ] Sections appear in this order: Required VMs (only for local VMs), Setup, Task, Instructions.
 - [ ] If the practice uses local VMs, Required VMs lists every VM needed. In an online lab environment, the section is omitted.
-- [ ] Setup names dependencies, the catch-up script, and sign-ins. It contains no negative statements such as "No preparation is needed".
+- [ ] Setup names dependencies and the catch-up script first, then sign-ins and other steps. It contains no negative statements such as "No preparation is needed".
 - [ ] Task contains all details: names, values, permissions, end state. An experienced participant can complete the task without the Instructions.
 - [ ] The Instructions begin with the sentence naming the machine.
 - [ ] Every click and entry is documented as a step.
