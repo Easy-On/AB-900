@@ -27,7 +27,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-MgGraph -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -44,15 +44,15 @@
     $sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq $licenseName }
 
     Set-MgUserLicense `
-        -UserId:$userPrincipalName `
-        -AddLicenses:@() `
-        -RemoveLicenses:@($sku.SkuId)
+        -UserId $userPrincipalName `
+        -AddLicenses @() `
+        -RemoveLicenses @($sku.SkuId)
     ````
 
 1. Check the licenses of the user.
 
     ````powershell
-    Get-MgUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-MgUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **\<license name\>** is no longer listed.
@@ -71,7 +71,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-Entra -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -93,14 +93,14 @@
     $licenses.RemoveLicenses = @($license.SkuId)
 
     Set-EntraUserLicense `
-        -UserId:$userPrincipalName `
-        -AssignedLicenses:$licenses
+        -UserId $userPrincipalName `
+        -AssignedLicenses $licenses
     ````
 
 1. Check the licenses of the user.
 
     ````powershell
-    Get-EntraUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-EntraUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **\<license name\>** is no longer listed.

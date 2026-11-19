@@ -29,7 +29,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-MgGraph -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -45,15 +45,15 @@
     $sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq 'Microsoft_365_Copilot' }
 
     Set-MgUserLicense `
-        -UserId:$userPrincipalName `
-        -AddLicenses:@(@{ SkuId = $sku.SkuId }) `
-        -RemoveLicenses:@()
+        -UserId $userPrincipalName `
+        -AddLicenses @(@{ SkuId = $sku.SkuId }) `
+        -RemoveLicenses @()
     ````
 
 1. Check the licenses of the user.
 
     ````powershell
-    Get-MgUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-MgUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **Microsoft_365_Copilot** is listed.
@@ -72,7 +72,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-Entra -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -93,14 +93,14 @@
     $licenses.RemoveLicenses = @()
 
     Set-EntraUserLicense `
-        -UserId:$userPrincipalName `
-        -AssignedLicenses:$licenses
+        -UserId $userPrincipalName `
+        -AssignedLicenses $licenses
     ````
 
 1. Check the licenses of the user.
 
     ````powershell
-    Get-EntraUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-EntraUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **Microsoft_365_Copilot** is listed.

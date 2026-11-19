@@ -24,7 +24,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'SecurityEvents.Read.All'
+    Connect-MgGraph -Scopes 'SecurityEvents.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.

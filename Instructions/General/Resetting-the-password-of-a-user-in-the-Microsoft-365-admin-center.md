@@ -25,7 +25,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User-PasswordProfile.ReadWrite.All', 'User.Read.All'
+    Connect-MgGraph -Scopes 'User-PasswordProfile.ReadWrite.All', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -45,14 +45,14 @@
     }
 
     Update-MgUser `
-        -UserId:$userPrincipalName `
-        -PasswordProfile:$passwordProfile
+        -UserId $userPrincipalName `
+        -PasswordProfile $passwordProfile
     ````
 
 1. Check the date of the last password change.
 
     ````powershell
-    Get-MgUser -UserId:$userPrincipalName -Property:'DisplayName', 'LastPasswordChangeDateTime' |
+    Get-MgUser -UserId $userPrincipalName -Property 'DisplayName', 'LastPasswordChangeDateTime' |
         Select-Object -Property DisplayName, LastPasswordChangeDateTime
     ````
 
@@ -70,7 +70,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'User-PasswordProfile.ReadWrite.All', 'User.Read.All'
+    Connect-Entra -Scopes 'User-PasswordProfile.ReadWrite.All', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -84,18 +84,18 @@
 1. Reset the password of the user.
 
     ````powershell
-    $securePassword = ConvertTo-SecureString -String:$newTemporaryPassword -AsPlainText -Force
+    $securePassword = ConvertTo-SecureString -String $newTemporaryPassword -AsPlainText -Force
 
     Set-EntraUserPassword `
-        -UserId:$userPrincipalName `
-        -Password:$securePassword `
-        -ForceChangePasswordNextLogin:$false
+        -UserId $userPrincipalName `
+        -Password $securePassword `
+        -ForceChangePasswordNextLogin $false
     ````
 
 1. Check the date of the last password change.
 
     ````powershell
-    Get-EntraUser -UserId:$userPrincipalName -Property:'DisplayName', 'LastPasswordChangeDateTime' |
+    Get-EntraUser -UserId $userPrincipalName -Property 'DisplayName', 'LastPasswordChangeDateTime' |
         Select-Object -Property DisplayName, LastPasswordChangeDateTime
     ````
 

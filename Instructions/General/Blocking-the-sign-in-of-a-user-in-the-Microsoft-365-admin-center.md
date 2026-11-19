@@ -26,7 +26,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User.ReadWrite.All'
+    Connect-MgGraph -Scopes 'User.ReadWrite.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -41,14 +41,14 @@
 
     ````powershell
     Update-MgUser `
-        -UserId:$userPrincipalName `
-        -AccountEnabled:$accountEnabled
+        -UserId $userPrincipalName `
+        -AccountEnabled $accountEnabled
     ````
 
 1. Check the sign-in status of the user.
 
     ````powershell
-    Get-MgUser -UserId:$userPrincipalName -Property:'DisplayName', 'AccountEnabled' |
+    Get-MgUser -UserId $userPrincipalName -Property 'DisplayName', 'AccountEnabled' |
         Select-Object -Property DisplayName, AccountEnabled
     ````
 
@@ -66,7 +66,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'User.ReadWrite.All'
+    Connect-Entra -Scopes 'User.ReadWrite.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -81,14 +81,14 @@
 
     ````powershell
     Set-EntraUser `
-        -UserId:$userPrincipalName `
-        -AccountEnabled:$accountEnabled
+        -UserId $userPrincipalName `
+        -AccountEnabled $accountEnabled
     ````
 
 1. Check the sign-in status of the user.
 
     ````powershell
-    Get-EntraUser -UserId:$userPrincipalName |
+    Get-EntraUser -UserId $userPrincipalName |
         Select-Object -Property DisplayName, AccountEnabled
     ````
 

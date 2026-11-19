@@ -47,15 +47,15 @@
 
     ````powershell
     New-LabelPolicy `
-        -Name:$policyName `
-        -Labels:$labelName `
-        -ExchangeLocation:'All'
+        -Name $policyName `
+        -Labels $labelName `
+        -ExchangeLocation 'All'
     ````
 
 1. Check the label policy.
 
     ````powershell
-    Get-LabelPolicy -Identity:$policyName | Select-Object -Property Name, Labels
+    Get-LabelPolicy -Identity $policyName | Select-Object -Property Name, Labels
     ````
 
     Verify that **\<policy name\>** is shown with the label **\<label name\>**.

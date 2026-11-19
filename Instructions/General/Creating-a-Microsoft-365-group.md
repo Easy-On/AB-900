@@ -39,7 +39,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'Group.ReadWrite.All', 'User.Read.All'
+    Connect-MgGraph -Scopes 'Group.ReadWrite.All', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -57,42 +57,42 @@
 
     ````powershell
     $group = New-MgGroup `
-        -DisplayName:$groupName `
-        -Description:$groupDescription `
-        -MailNickname:$groupEmailAlias `
-        -MailEnabled:$true `
-        -SecurityEnabled:$false `
-        -GroupTypes:@('Unified')
+        -DisplayName $groupName `
+        -Description $groupDescription `
+        -MailNickname $groupEmailAlias `
+        -MailEnabled $true `
+        -SecurityEnabled $false `
+        -GroupTypes @('Unified')
     ````
 
 1. Add the owner to the group.
 
     ````powershell
-    $owner = Get-MgUser -UserId:$ownerUserPrincipalName
+    $owner = Get-MgUser -UserId $ownerUserPrincipalName
 
     New-MgGroupOwnerByRef `
-        -GroupId:$group.Id `
-        -BodyParameter:@{ '@odata.id' = "https://graph.microsoft.com/v1.0/directoryObjects/$($owner.Id)" }
+        -GroupId $group.Id `
+        -BodyParameter @{ '@odata.id' = "https://graph.microsoft.com/v1.0/directoryObjects/$($owner.Id)" }
     ````
 
 1. Add the members to the group.
 
     ````powershell
     foreach ($memberUserPrincipalName in $memberUserPrincipalNames) {
-        $member = Get-MgUser -UserId:$memberUserPrincipalName
+        $member = Get-MgUser -UserId $memberUserPrincipalName
 
         New-MgGroupMemberByRef `
-            -GroupId:$group.Id `
-            -BodyParameter:@{ '@odata.id' = "https://graph.microsoft.com/v1.0/directoryObjects/$($member.Id)" }
+            -GroupId $group.Id `
+            -BodyParameter @{ '@odata.id' = "https://graph.microsoft.com/v1.0/directoryObjects/$($member.Id)" }
     }
     ````
 
 1. Check the group.
 
     ````powershell
-    Get-MgGroup -GroupId:$group.Id | Select-Object -Property DisplayName, Mail
+    Get-MgGroup -GroupId $group.Id | Select-Object -Property DisplayName, Mail
 
-    Get-MgGroupMember -GroupId:$group.Id | ForEach-Object { $_.AdditionalProperties.displayName }
+    Get-MgGroupMember -GroupId $group.Id | ForEach-Object { $_.AdditionalProperties.displayName }
     ````
 
     Verify that **\<group name\>** is shown with the email address **\<group email address\>**, and that the members are listed.
@@ -109,7 +109,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'Group.ReadWrite.All', 'User.Read.All'
+    Connect-Entra -Scopes 'Group.ReadWrite.All', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -127,42 +127,42 @@
 
     ````powershell
     $group = New-EntraGroup `
-        -DisplayName:$groupName `
-        -Description:$groupDescription `
-        -MailNickName:$groupEmailAlias `
-        -MailEnabled:$true `
-        -SecurityEnabled:$false `
-        -GroupTypes:@('Unified')
+        -DisplayName $groupName `
+        -Description $groupDescription `
+        -MailNickName $groupEmailAlias `
+        -MailEnabled $true `
+        -SecurityEnabled $false `
+        -GroupTypes @('Unified')
     ````
 
 1. Add the owner to the group.
 
     ````powershell
-    $owner = Get-EntraUser -UserId:$ownerUserPrincipalName
+    $owner = Get-EntraUser -UserId $ownerUserPrincipalName
 
     Add-EntraGroupOwner `
-        -GroupId:$group.Id `
-        -OwnerId:$owner.Id
+        -GroupId $group.Id `
+        -OwnerId $owner.Id
     ````
 
 1. Add the members to the group.
 
     ````powershell
     foreach ($memberUserPrincipalName in $memberUserPrincipalNames) {
-        $member = Get-EntraUser -UserId:$memberUserPrincipalName
+        $member = Get-EntraUser -UserId $memberUserPrincipalName
 
         Add-EntraGroupMember `
-            -GroupId:$group.Id `
-            -MemberId:$member.Id
+            -GroupId $group.Id `
+            -MemberId $member.Id
     }
     ````
 
 1. Check the group.
 
     ````powershell
-    Get-EntraGroup -GroupId:$group.Id | Select-Object -Property DisplayName, Mail
+    Get-EntraGroup -GroupId $group.Id | Select-Object -Property DisplayName, Mail
 
-    Get-EntraGroupMember -GroupId:$group.Id | Select-Object -Property DisplayName
+    Get-EntraGroupMember -GroupId $group.Id | Select-Object -Property DisplayName
     ````
 
     Verify that **\<group name\>** is shown with the email address **\<group email address\>**, and that the members are listed.

@@ -26,7 +26,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'AuditLog.Read.All'
+    Connect-MgGraph -Scopes 'AuditLog.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -40,8 +40,8 @@
 
     ````powershell
     Get-MgAuditLogSignIn `
-        -Filter:"userPrincipalName eq '$userPrincipalName'" `
-        -Top:50 |
+        -Filter "userPrincipalName eq '$userPrincipalName'" `
+        -Top 50 |
         Where-Object { $_.Status.ErrorCode -ne 0 } |
         Select-Object -Property CreatedDateTime, AppDisplayName, @{ Name = 'FailureReason'; Expression = { $_.Status.FailureReason } }
     ````
@@ -60,7 +60,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'AuditLog.Read.All'
+    Connect-Entra -Scopes 'AuditLog.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -74,8 +74,8 @@
 
     ````powershell
     Get-EntraAuditSignInLog `
-        -Filter:"userPrincipalName eq '$userPrincipalName'" `
-        -Top:50 |
+        -Filter "userPrincipalName eq '$userPrincipalName'" `
+        -Top 50 |
         Where-Object { $_.Status.ErrorCode -ne 0 } |
         Select-Object -Property CreatedDateTime, AppDisplayName, @{ Name = 'FailureReason'; Expression = { $_.Status.FailureReason } }
     ````

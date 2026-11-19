@@ -27,7 +27,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'AuditLog.Read.All'
+    Connect-MgGraph -Scopes 'AuditLog.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -40,7 +40,7 @@
 1. Show the MFA registration details of the user.
 
     ````powershell
-    Get-MgReportAuthenticationMethodUserRegistrationDetail -Filter:"userPrincipalName eq '$userPrincipalName'" |
+    Get-MgReportAuthenticationMethodUserRegistrationDetail -Filter "userPrincipalName eq '$userPrincipalName'" |
         Select-Object -Property UserDisplayName, IsMfaCapable, IsMfaRegistered, MethodsRegistered
     ````
 
