@@ -35,7 +35,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-MgGraph -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -62,14 +62,14 @@
     }
 
     New-MgUser `
-        -DisplayName:$displayName `
-        -GivenName:$firstName `
-        -Surname:$lastName `
-        -UserPrincipalName:$userPrincipalName `
-        -MailNickname:$mailNickname `
-        -UsageLocation:$usageLocation `
-        -PasswordProfile:$passwordProfile `
-        -AccountEnabled:$true
+        -DisplayName $displayName `
+        -GivenName $firstName `
+        -Surname $lastName `
+        -UserPrincipalName $userPrincipalName `
+        -MailNickname $mailNickname `
+        -UsageLocation $usageLocation `
+        -PasswordProfile $passwordProfile `
+        -AccountEnabled $true
     ````
 
     Verify that the output shows the **DisplayName** and the **Id** of the user.
@@ -80,15 +80,15 @@
     $sku = Get-MgSubscribedSku -All | Where-Object { $_.SkuPartNumber -eq $licenseName }
 
     Set-MgUserLicense `
-        -UserId:$userPrincipalName `
-        -AddLicenses:@(@{ SkuId = $sku.SkuId }) `
-        -RemoveLicenses:@()
+        -UserId $userPrincipalName `
+        -AddLicenses @(@{ SkuId = $sku.SkuId }) `
+        -RemoveLicenses @()
     ````
 
 1. If you assigned a license, check the license of the user.
 
     ````powershell
-    Get-MgUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-MgUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **\<license name\>** is listed.
@@ -105,7 +105,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'User.ReadWrite.All', 'Organization.Read.All'
+    Connect-Entra -Scopes 'User.ReadWrite.All', 'Organization.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -131,14 +131,14 @@
     $passwordProfile.ForceChangePasswordNextLogin = $false
 
     New-EntraUser `
-        -DisplayName:$displayName `
-        -GivenName:$firstName `
-        -Surname:$lastName `
-        -UserPrincipalName:$userPrincipalName `
-        -MailNickName:$mailNickname `
-        -UsageLocation:$usageLocation `
-        -PasswordProfile:$passwordProfile `
-        -AccountEnabled:$true
+        -DisplayName $displayName `
+        -GivenName $firstName `
+        -Surname $lastName `
+        -UserPrincipalName $userPrincipalName `
+        -MailNickName $mailNickname `
+        -UsageLocation $usageLocation `
+        -PasswordProfile $passwordProfile `
+        -AccountEnabled $true
     ````
 
     Verify that the output shows the **DisplayName** and the **Id** of the user.
@@ -154,14 +154,14 @@
     $licenses.RemoveLicenses = @()
 
     Set-EntraUserLicense `
-        -UserId:$userPrincipalName `
-        -AssignedLicenses:$licenses
+        -UserId $userPrincipalName `
+        -AssignedLicenses $licenses
     ````
 
 1. If you assigned a license, check the license of the user.
 
     ````powershell
-    Get-EntraUserLicenseDetail -UserId:$userPrincipalName | Select-Object -Property SkuPartNumber
+    Get-EntraUserLicenseDetail -UserId $userPrincipalName | Select-Object -Property SkuPartNumber
     ````
 
     Verify that **\<license name\>** is listed.

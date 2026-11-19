@@ -28,7 +28,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'Files.ReadWrite.All'
+    Connect-MgGraph -Scopes 'Files.ReadWrite.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -44,8 +44,8 @@
 
     ````powershell
     $item = Invoke-MgGraphRequest `
-        -Method:'GET' `
-        -Uri:"v1.0/me/drive/root:/$([uri]::EscapeDataString($fileName))"
+        -Method 'GET' `
+        -Uri "v1.0/me/drive/root:/$([uri]::EscapeDataString($fileName))"
     ````
 
 1. Share the file with the user.
@@ -59,16 +59,16 @@
     }
 
     Invoke-MgGraphRequest `
-        -Method:'POST' `
-        -Uri:"v1.0/me/drive/items/$($item.id)/invite" `
-        -Body:($body | ConvertTo-Json -Depth:5) `
-        -ContentType:'application/json'
+        -Method 'POST' `
+        -Uri "v1.0/me/drive/items/$($item.id)/invite" `
+        -Body ($body | ConvertTo-Json -Depth 5) `
+        -ContentType 'application/json'
     ````
 
 1. Show the access to the file.
 
     ````powershell
-    (Invoke-MgGraphRequest -Method:'GET' -Uri:"v1.0/me/drive/items/$($item.id)/permissions").value |
+    (Invoke-MgGraphRequest -Method 'GET' -Uri "v1.0/me/drive/items/$($item.id)/permissions").value |
         ForEach-Object { [pscustomobject]@{ User = $_.grantedToV2.user.displayName; Roles = $_.roles -join ', ' } }
     ````
 

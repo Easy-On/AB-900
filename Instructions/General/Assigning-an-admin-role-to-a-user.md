@@ -26,7 +26,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'RoleManagement.ReadWrite.Directory', 'User.Read.All'
+    Connect-MgGraph -Scopes 'RoleManagement.ReadWrite.Directory', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -40,21 +40,21 @@
 1. Assign the role to the user.
 
     ````powershell
-    $user = Get-MgUser -UserId:$userPrincipalName
-    $roleDefinition = Get-MgRoleManagementDirectoryRoleDefinition -Filter:"displayName eq '$roleName'"
+    $user = Get-MgUser -UserId $userPrincipalName
+    $roleDefinition = Get-MgRoleManagementDirectoryRoleDefinition -Filter "displayName eq '$roleName'"
 
     New-MgRoleManagementDirectoryRoleAssignment `
-        -PrincipalId:$user.Id `
-        -RoleDefinitionId:$roleDefinition.Id `
-        -DirectoryScopeId:'/'
+        -PrincipalId $user.Id `
+        -RoleDefinitionId $roleDefinition.Id `
+        -DirectoryScopeId '/'
     ````
 
 1. Check the roles of the user.
 
     ````powershell
     Get-MgRoleManagementDirectoryRoleAssignment `
-        -Filter:"principalId eq '$($user.Id)'" `
-        -ExpandProperty:'roleDefinition' |
+        -Filter "principalId eq '$($user.Id)'" `
+        -ExpandProperty 'roleDefinition' |
         ForEach-Object { $_.RoleDefinition.DisplayName }
     ````
 
@@ -72,7 +72,7 @@
 1. Connect to Microsoft Entra.
 
     ````powershell
-    Connect-Entra -Scopes:'RoleManagement.ReadWrite.Directory', 'User.Read.All'
+    Connect-Entra -Scopes 'RoleManagement.ReadWrite.Directory', 'User.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -86,19 +86,19 @@
 1. Assign the role to the user.
 
     ````powershell
-    $user = Get-EntraUser -UserId:$userPrincipalName
-    $roleDefinition = Get-EntraDirectoryRoleDefinition -Filter:"displayName eq '$roleName'"
+    $user = Get-EntraUser -UserId $userPrincipalName
+    $roleDefinition = Get-EntraDirectoryRoleDefinition -Filter "displayName eq '$roleName'"
 
     New-EntraDirectoryRoleAssignment `
-        -PrincipalId:$user.Id `
-        -RoleDefinitionId:$roleDefinition.Id `
-        -DirectoryScopeId:'/'
+        -PrincipalId $user.Id `
+        -RoleDefinitionId $roleDefinition.Id `
+        -DirectoryScopeId '/'
     ````
 
 1. Check the roles of the user.
 
     ````powershell
-    Get-EntraDirectoryRoleAssignment -Filter:"principalId eq '$($user.Id)' and roleDefinitionId eq '$($roleDefinition.Id)'"
+    Get-EntraDirectoryRoleAssignment -Filter "principalId eq '$($user.Id)' and roleDefinitionId eq '$($roleDefinition.Id)'"
     ````
 
     Verify that an assignment of the role **\<role name\>** is returned.

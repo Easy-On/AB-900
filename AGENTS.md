@@ -74,7 +74,8 @@ All repository content is written in English (US): Markdown, file and folder nam
 
 * Code blocks use four backticks with a language identifier, indented by 4 spaces inside steps. Longer explanations use block comments (`<# ... #>` in PowerShell).
 * Values the user must enter stay empty with a comment: `$tenantName = '' # Between the quotes insert your tenant name`.
-* Long commands use line continuation, one parameter per line; in PowerShell backticks and `-Parameter:$value` syntax.
+* Long commands use line continuation, one parameter per line; in PowerShell use a backtick at the end of each line.
+* In PowerShell commands, separate the parameter name from its value with a space, not a colon: `-UserId $userPrincipalName`, not `-UserId:$userPrincipalName`. Use the colon only where a space does not work, such as for a switch parameter with a boolean value: `-Confirm:$false`.
 * End PowerShell procedures that open a session with a disconnect step (e.g. `Disconnect-MgGraph`, `Disconnect-PnPOnline`).
 
 ## Repository specifics

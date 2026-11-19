@@ -58,15 +58,15 @@
 
     ````powershell
     New-Label `
-        -Name:$labelName `
-        -DisplayName:$labelName `
-        -Tooltip:$labelDescription
+        -Name $labelName `
+        -DisplayName $labelName `
+        -Tooltip $labelDescription
     ````
 
 1. Check the label.
 
     ````powershell
-    Get-Label -Identity:$labelName | Select-Object -Property DisplayName, Tooltip
+    Get-Label -Identity $labelName | Select-Object -Property DisplayName, Tooltip
     ````
 
     Verify that **\<label name\>** is shown with the description **\<label description\>**.

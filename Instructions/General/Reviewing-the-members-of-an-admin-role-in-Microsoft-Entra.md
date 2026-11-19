@@ -23,7 +23,7 @@
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'RoleManagement.Read.Directory','Directory.Read.All'
+    Connect-MgGraph -Scopes 'RoleManagement.Read.Directory','Directory.Read.All'
     ````
 
 1. In the sign-in window, sign in with your administrator account, and accept the requested permissions if prompted.
@@ -36,9 +36,9 @@
 1. Show the members of the role.
 
     ````powershell
-    $role = Get-MgDirectoryRole -Filter:"displayName eq '$roleName'"
+    $role = Get-MgDirectoryRole -Filter "displayName eq '$roleName'"
 
-    Get-MgDirectoryRoleMember -DirectoryRoleId:$role.Id |
+    Get-MgDirectoryRoleMember -DirectoryRoleId $role.Id |
         ForEach-Object { $_.AdditionalProperties.displayName }
     ````
 

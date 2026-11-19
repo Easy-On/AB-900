@@ -70,7 +70,7 @@ Perform this task in PowerShell, on **LON-CL1**.
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'ServiceHealth.Read.All', 'ServiceMessage.Read.All'
+    Connect-MgGraph -Scopes 'ServiceHealth.Read.All', 'ServiceMessage.Read.All'
     ````
 
 1. In the sign-in window, sign in as **admin@\<your tenant\>.onmicrosoft.com**, and accept the requested permissions if prompted.
@@ -87,7 +87,7 @@ Perform this task in PowerShell, on **LON-CL1**.
 
     ````powershell
     Get-MgServiceAnnouncementIssue `
-        -Filter:"isResolved eq false" `
+        -Filter "isResolved eq false" `
         -All |
         Select-Object -Property Id, Service, Title, Classification, StartDateTime
     ````
@@ -98,8 +98,8 @@ Perform this task in PowerShell, on **LON-CL1**.
 
     ````powershell
     Get-MgServiceAnnouncementMessage `
-        -Top:10 `
-        -Sort:'lastModifiedDateTime desc' |
+        -Top 10 `
+        -Sort 'lastModifiedDateTime desc' |
         Select-Object -Property Id, Title, Category, Severity, ActionRequiredByDateTime
     ````
 

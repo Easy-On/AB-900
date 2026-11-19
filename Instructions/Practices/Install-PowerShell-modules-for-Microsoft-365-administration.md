@@ -22,8 +22,8 @@ Perform this task in a terminal, on **LON-CL1**.
 
     ````powershell
     Set-ExecutionPolicy `
-        -ExecutionPolicy:'RemoteSigned' `
-        -Scope:'CurrentUser' `
+        -ExecutionPolicy 'RemoteSigned' `
+        -Scope 'CurrentUser' `
         -Force
     ````
 
@@ -31,23 +31,23 @@ Perform this task in a terminal, on **LON-CL1**.
 
     ````powershell
     Install-Module `
-        -Name:'Microsoft.Graph' `
-        -Repository:'PSGallery' `
-        -Scope:'CurrentUser' `
+        -Name 'Microsoft.Graph' `
+        -Repository 'PSGallery' `
+        -Scope 'CurrentUser' `
         -Force
     ````
 
     *Note:* In Windows PowerShell 5.1, the message NuGet provider is required to continue appears. Type **Y**, and press Enter. The installation can take several minutes.
 
-    It may take several minutes to install the module. You can continue with the next steps while the module is being installed in another tab of Windows Terminal. If you want to check whether the installation is finished, run the command `Get-InstalledModule -Name:'Microsoft.Graph'`. If the module is listed with a version, the installation is finished.
+    It may take several minutes to install the module. You can continue with the next steps while the module is being installed in another tab of Windows Terminal. If you want to check whether the installation is finished, run the command `Get-InstalledModule -Name 'Microsoft.Graph'`. If the module is listed with a version, the installation is finished.
 
 1. Install the module **Microsoft.Entra**.
 
     ````powershell
     Install-Module `
-        -Name:'Microsoft.Entra' `
-        -Repository:'PSGallery' `
-        -Scope:'CurrentUser' `
+        -Name 'Microsoft.Entra' `
+        -Repository 'PSGallery' `
+        -Scope 'CurrentUser' `
         -AllowClobber `
         -Force
     ````
@@ -56,9 +56,9 @@ Perform this task in a terminal, on **LON-CL1**.
 
     ````powershell
     Install-Module `
-        -Name:'ExchangeOnlineManagement' `
-        -Repository:'PSGallery' `
-        -Scope:'CurrentUser' `
+        -Name 'ExchangeOnlineManagement' `
+        -Repository 'PSGallery' `
+        -Scope 'CurrentUser' `
         -AllowClobber `
         -Force
     ````
@@ -66,7 +66,7 @@ Perform this task in a terminal, on **LON-CL1**.
 1. Check that the modules are installed.
 
     ````powershell
-    Get-InstalledModule -Name:'Microsoft.Graph', 'Microsoft.Entra', 'ExchangeOnlineManagement' |
+    Get-InstalledModule -Name 'Microsoft.Graph', 'Microsoft.Entra', 'ExchangeOnlineManagement' |
         Select-Object -Property Name, Version
     ````
 
@@ -75,7 +75,7 @@ Perform this task in a terminal, on **LON-CL1**.
 1. Connect to Microsoft Graph.
 
     ````powershell
-    Connect-MgGraph -Scopes:'User.Read'
+    Connect-MgGraph -Scopes 'User.Read'
     ````
 
 1. In the sign-in window Let's get you signed in, select **Work or school account**, and click **Continue**. Sign in as **admin@\<your tenant\>.onmicrosoft.com**, and accept the requested permissions if prompted. If the message Sign in to all apps and websites on this device? appears, click **No, this app only**.
